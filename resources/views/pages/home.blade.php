@@ -133,12 +133,14 @@
         <!--why choose us-->
        <section class="py-20 bg-white">
             <div>
-                <img  class=" w-11" src="{{asset('blog_one.svg')}}"/>
+                <img  class=" w-20" src="{{asset('blog_one.svg')}}"/>
             </div>
             <div class="container mx-auto px-4 mb-10">
                 <!-- Section Heading -->
                 <div class="text-center mb-12">
                     <h2 class="text-3xl font-bold text-gray-800">Why Choose Us</h2>
+                    <div class="border-b-4 border-green-600"></div>
+
                     <p class="text-gray-600 mt-2">Discover the benefits of our services</p>
                 </div>
                 <!-- Reasons Grid -->
