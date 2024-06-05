@@ -15,6 +15,10 @@ class CreateTeamMembersTable extends Migration
     {
         Schema::create('team_members', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('position');
+            $table->text('bio')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
