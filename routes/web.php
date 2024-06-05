@@ -1,8 +1,9 @@
 <?php
 
+use App\Http\Controllers\ServicesPageController;
 use Illuminate\Support\Facades\Route;
 use TCG\Voyager\Facades\Voyager as FacadesVoyager;
-use Voyager;
+
 
 
 /*
@@ -19,7 +20,10 @@ use Voyager;
 Route::get('/', function () {
     return view('pages.home');
 });
-
+Route::get('/services',['ServicesPageController@index'])->name('services');
+Route::get('/about_us',['ContactUsPageController@index'])->name('about-us');
+Route::get('/contact_us',['ContactUsPageController@index'])->name('contact-us');
+#Route::get('/blog',['blogPageController@index'])->name('services');
 
 Route::group(['prefix' => 'admin'], function () {
     FacadesVoyager::routes();

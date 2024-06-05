@@ -1,4 +1,8 @@
-/* resources/css/app.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 300px; /* Adjust this value as needed */
+}
