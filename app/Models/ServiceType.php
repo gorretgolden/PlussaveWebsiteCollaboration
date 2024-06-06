@@ -5,13 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class AccountType extends Model
+class ServiceType extends Model
 
 {
     use HasFactory;
-    protected $fillable = ['type', 'title', 'sub_title', 'type','button_text'];
+    protected $fillable = ['name', 'description', 'icon','image'];
     public function accounts()
     {
-        return $this->hasMany(Account::class);
+        return $this->hasMany(ServiceDetails::class);
     }
 }
