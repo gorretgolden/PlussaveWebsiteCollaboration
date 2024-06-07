@@ -24,13 +24,13 @@
     @vite('resources/js/app.js') --}}
 
     <!--navbar-->
-    <nav class="bg-black flex justify-between items-center p-4">
+    <nav style="background-color: rgb(11, 97, 11)" class=" flex justify-between items-center p-4">
         <div class="flex items-center">
             <!-- Logo -->
             <a href="/">
-                <img class="h-10 w-auto mr-2" src="{{ asset('images/app_logo.png') }}" alt="Your Company">
+                <img class=" h-16 w-auto mr-2" src="{{ asset('applogo.png') }}" alt="Your Company">
             </a>
-            <a href="/"> <span class="text-purple-700">Plussave</span></a>
+            {{-- <a href="/"> <span class="text-white">Plussave</span></a> --}}
         </div>
         <!-- Mobile menu button -->
         <button type="button" class="text-gray-400 focus:outline-none sm:hidden" id="mobile-menu-button">
@@ -41,19 +41,19 @@
         <!-- Responsive navigation links -->
         <div class="hidden sm:flex space-x-4">
             <a href="{{ route('services') }}"
-                class="block text-white hover:bg-purple-900 rounded-md hover:text-white px-3 py-2 text-base font-semi-bold mb-2">Services</a>
+                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">Services</a>
 
             <a href="{{ route('about-us') }}"
-                class="block text-white hover:bg-purple-900 rounded-md hover:text-white px-3 py-2 text-base font-semi-bold mb-2">About
+                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">About
                 Us</a>
             <a href="{{ route('contact-us') }}"
-                class="block text-white hover:bg-purple-900 rounded-md hover:text-white px-3 py-2 text-base font-semi-bold mb-2">Contact
+                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">Contact
                 Us</a>
 
         </div>
         <!-- Login button -->
-        <button style="background-color: green"
-            class=" text-white font-semibold py-2 px-3 rounded hover:bg-white hover:text-green-600 hover:border-transparent hidden sm:block">
+        <button
+            class="bg-white text-green-700 font-semibold py-2 px-3 rounded hover:bg-white hover:text-green-600 hover:border-transparent hidden sm:block">
             Apply for a Loan
         </button>
 
