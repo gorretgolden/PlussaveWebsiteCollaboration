@@ -6,89 +6,67 @@
 
 
     <!-- Hero Section in Blade Template -->
-   <div>
+    <div>
         @livewire('carousel')
 
     </div>
+    <br>
 
+      <!--service types-->
+      <section>
+
+        @livewire('service-types')
+
+      </section>
+
+    <div class="container mx-auto py-16 px-6">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+            <!-- Image on the left -->
+            <div class="md:w-1/2 mb-6 md:mb-0">
+                <img class="w-full h-auto rounded-lg" src="https://img.freepik.com/free-photo/business-colleagues-studying-reports_74855-1139.jpg?t=st=1717752645~exp=1717756245~hmac=726d4428d263476c46e1f6ebe2d0a089d75a928b2c7b7cf01214a58afe46e224&w=1800" alt="Image">
+            </div>
+            <!-- Title and text on the right -->
+            <div class="md:w-1/2 md:ml-6 mb-5 p-6" >
+                <h2 class="text-3xl font-bold mb-4">Fintech Insights</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque felis vel nibh lacinia placerat. Proin eget dolor ultrices, consectetur magna eget, vehicula sapien. Donec ac ultricies ligula. Integer ut risus leo.</p>
+                <p class="text-gray-700 leading-relaxed">Nam ultricies, ex sit amet aliquet dapibus, magna nulla tempor tortor, ut consectetur odio erat eget turpis. Suspendisse potenti. Pellentesque commodo est id mauris rhoncus, ut vehicula arcu pretium.</p>
+                <p class="text-gray-700 leading-relaxed mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque felis vel nibh lacinia placerat. Proin eget dolor ultrices, consectetur magna eget, vehicula sapien. Donec ac ultricies ligula. Integer ut risus leo.</p>
+
+            </div>
+        </div>
+    </div>
 
 
     <div class="content-wrapper">
 
 
-        <!--service types-->
-        <section>
-
-            <div class="mx-auto px-14 py-16 mb-8">
-                <h3 class="text-center font-semibold text-2xl py-6">Our Service Types</h3>
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-6 py-4">
-                    <!--card one-->
-                    <div class="bg-white shadow-md rounded-lg overflow-hidden hover:border border-purple-600">
-                        <img class="w-full h-48 object-cover"
-                            src="https://img.freepik.com/free-photo/confident-african-businesswoman-smiling-closeup-portrait-jobs-career-campaign_53876-143280.jpg?t=st=1717592869~exp=1717596469~hmac=56882dbb7e44dba15a2eca030e85af6b79dc109bd3251d5751e0902998ca3201&w=2000"
-                            alt="Card Image">
-                        <div class="p-6">
-                            <h2 class="text-xl font-bold mb-2">Hair Dressing</h2>
-                            <p class="text-gray-700 mb-4">This is a description for the first card. It contains a
-                                summary of the content.</p>
-
-                        </div>
-                    </div>
-
-                    <!--card two-->
-                    <div class="bg-white shadow-md rounded-lg overflow-hidden hover:border border-purple-600">
-                        <img class="w-full h-48 object-cover"
-                            src="https://img.freepik.com/free-photo/front-view-plants-with-coins-stacked-dirt-copy-space_23-2148803944.jpg?t=st=1717594424~exp=1717598024~hmac=ef260e9b96da5f752b7543b0e75577c0ed72f89f8214daaf577c8f416506f09e&w=900"
-                            alt="Card Image">
-                        <div class="p-6">
-                            <h2 class="text-xl font-bold mb-2">Makeup Services</h2>
-                            <p class="text-gray-700 mb-4">This is a description for the first card. It contains a
-                                summary of the content.</p>
-
-                        </div>
-                    </div>
-
-                    <!--card three-->
-                    <div class="bg-white shadow-md rounded-lg overflow-hidden hover:border border-purple-600">
-                        <img class="w-full h-48 object-cover"
-                            src="https://img.freepik.com/free-photo/front-view-plants-with-coins-stacked-dirt-copy-space_23-2148803944.jpg?t=st=1717594424~exp=1717598024~hmac=ef260e9b96da5f752b7543b0e75577c0ed72f89f8214daaf577c8f416506f09e&w=900"
-                            alt="Card Image">
-                        <div class="p-6">
-                            <h2 class="text-xl font-bold mb-2">Manicure & Pedicure</h2>
-                            <p class="text-gray-700 mb-4">This is a description for the first card. It contains a
-                                summary of the content.</p>
-
-                        </div>
-                    </div>
-
-                    <!--card four-->
-                    <div class="bg-white shadow-md rounded-lg overflow-hidden hover:border border-purple-600">
-                        <img class="w-full h-48 object-cover"
-                            src="https://img.freepik.com/free-photo/front-view-plants-with-coins-stacked-dirt-copy-space_23-2148803944.jpg?t=st=1717594424~exp=1717598024~hmac=ef260e9b96da5f752b7543b0e75577c0ed72f89f8214daaf577c8f416506f09e&w=900"
-                            alt="Card Image">
-                        <div class="p-6">
-                            <h2 class="text-xl font-bold mb-2">Facials & Waxing </h2>
-                            <p class="text-gray-700 mb-4">This is a description for the first card. It contains a
-                                summary of the content.</p>
-
-                        </div>
-                    </div>
 
 
+      >
 
+        <div class="container mx-auto py-16 px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+              <!-- Title and text on the right -->
+              <div class="md:w-1/2 md:ml-6 mb-5 p-6" >
+                <h2 class="text-3xl font-bold mb-4">Fintech Insights</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque felis vel nibh lacinia placerat. Proin eget dolor ultrices, consectetur magna eget, vehicula sapien. Donec ac ultricies ligula. Integer ut risus leo.</p>
+                <p class="text-gray-700 leading-relaxed">Nam ultricies, ex sit amet aliquet dapibus, magna nulla tempor tortor, ut consectetur odio erat eget turpis. Suspendisse potenti. Pellentesque commodo est id mauris rhoncus, ut vehicula arcu pretium.</p>
+                <p class="text-gray-700 leading-relaxed mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque felis vel nibh lacinia placerat. Proin eget dolor ultrices, consectetur magna eget, vehicula sapien. Donec ac ultricies ligula. Integer ut risus leo.</p>
 
-
-                </div>
             </div>
+                <div class="md:w-1/2 mb-6 md:mb-0">
+                    <img class="w-full h-auto rounded-lg" src="https://img.freepik.com/free-photo/business-colleagues-studying-reports_74855-1139.jpg?t=st=1717752645~exp=1717756245~hmac=726d4428d263476c46e1f6ebe2d0a089d75a928b2c7b7cf01214a58afe46e224&w=1800" alt="Image">
+                </div>
 
+            </div>
+        </div>
 
-        </section>
 
 
         <!--why choose us-->
-       <section class="py-20 bg-white">
+        <section class="py-20 bg-white">
             <div>
-                <img  class=" w-20" src="{{asset('blog_one.svg')}}"/>
+                <img class=" w-20" src="{{ asset('blog_one.svg') }}" />
             </div>
             <div class="container mx-auto px-4 mb-10">
                 <!-- Section Heading -->

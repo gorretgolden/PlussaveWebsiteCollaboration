@@ -40,15 +40,20 @@
         </button>
         <!-- Responsive navigation links -->
         <div class="hidden sm:flex space-x-4">
+
             <a href="{{ route('services') }}"
-                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">Services</a>
+                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">Our Services</a>
 
             <a href="{{ route('about-us') }}"
                 class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">About
                 Us</a>
+                <a href="{{ route('contact-us') }}"
+                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">FAQs</a>
             <a href="{{ route('contact-us') }}"
                 class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">Contact
                 Us</a>
+                <a href="{{ route('contact-us') }}"
+                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">Blog</a>
 
         </div>
         <!-- Login button -->

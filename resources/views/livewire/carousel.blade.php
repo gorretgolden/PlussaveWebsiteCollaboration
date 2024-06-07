@@ -4,7 +4,7 @@
             <div class="{{ $index === $currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0' }} transition-opacity duration-1000 ease-in-out absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('storage/' . str_replace('\\', '/', $image->image_path)) }}');">
                 <div class="absolute inset-0  flex flex-col items-center justify-center text-center p-4">
                     <h1 class="carousel-title text-2xl md:text-4xl font-bold mb-2 text-white transition-opacity duration-1000 ease-in-out opacity-0" data-title="{{ $image->title }}"></h1>
-                    <p class="text-sm md:text-lg text-white mb-4 p-4">{{ $image->description }}</p>
+                    <p class="text-sm md:text-lg text-white mb-4 p-2">{{ $image->description }}</p>
                     <button class="bg-green-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-green-700 transition-colors duration-300">Get Instant Loans</button>
                 </div>
             </div>
