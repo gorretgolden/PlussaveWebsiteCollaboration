@@ -6,54 +6,9 @@
 
 
     <!-- Hero Section in Blade Template -->
+   <div>
+        @livewire('carousel')
 
-    <div class="relative bg-gray-900">
-        <!-- Carousel Container -->
-        <div class="overflow-hidden w-full h-96">
-            <!-- Slides Container -->
-            <div class="flex transition-transform duration-300 ease-in-out">
-                <!-- Slide 1 -->
-                <div class="w-full h-96 flex-shrink-0 bg-cover bg-center text-white text-center flex items-center justify-center">
-                    <img src="https://img.freepik.com/free-vector/gradient-black-background-with-cubes_23-2149152314.jpg?t=st=1717601455~exp=1717605055~hmac=b83a55364037f7b6d4d3b76c16f042c5463e439b5146146778060ddb8eb4f6dd&w=2000" alt="Slide 1" class="mx-auto">
-                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50">
-                        <h1 class="text-4xl font-bold mb-2">Slide 1</h1>
-                        <p class="text-lg">Description for Slide 1</p>
-                    </div>
-                </div>
-                <!-- Slide 2 -->
-                <div class="w-full h-96 flex-shrink-0 bg-cover bg-center text-white text-center flex items-center justify-center">
-                    <img src="https://img.freepik.com/free-vector/black-blocks-frame-blank-black-background-vector_53876-67035.jpg?t=st=1717602297~exp=1717605897~hmac=06c68ab9db1d785153e7f44630d7759c4f2a993b613a2506bbedf802dfccbf52&w=1380" alt="Slide 2" class="mx-auto">
-                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50">
-                        <h1 class="text-4xl font-bold mb-2">Slide 2</h1>
-                        <p class="text-lg">Description for Slide 2</p>
-                    </div>
-                </div>
-                <!-- Slide 3 -->
-                <div class="w-full h-96 flex-shrink-0 bg-cover bg-center text-white text-center flex items-center justify-center">
-                    <img src="https://img.freepik.com/free-vector/black-blocks-frame-blank-black-background-vector_53876-66991.jpg?t=st=1717602321~exp=1717605921~hmac=29df297378b83189010a5f6b1cf4312f9abe0e48c322c4161986fbd5b8ee6ca8&w=1380" alt="Slide 3" class="mx-auto">
-                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50">
-                        <h1 class="text-4xl font-bold mb-2">Slide 3</h1>
-                        <p class="text-lg">Description for Slide 3</p>
-                    </div>
-                </div>
-                <!-- Slide 1 (duplicate) -->
-                <div class="w-full h-96 flex-shrink-0 bg-cover bg-center text-white text-center flex items-center justify-center">
-                    <img src="https://img.freepik.com/free-vector/black-blocks-frame-blank-black-background-vector_53876-66991.jpg?t=st=1717602321~exp=1717605921~hmac=29df297378b83189010a5f6b1cf4312f9abe0e48c322c4161986fbd5b8ee6ca8&w=1380" alt="Slide 1" class="mx-auto">
-                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50">
-                        <h1 class="text-4xl font-bold mb-2">Slide 1</h1>
-                        <p class="text-lg">Description for Slide 1</p>
-                    </div>
-                </div>
-                <!-- Slide 2 (duplicate) -->
-                <div class="w-full h-96 flex-shrink-0 bg-cover bg-center text-white text-center flex items-center justify-center">
-                    <img src="https://img.freepik.com/free-vector/black-blocks-frame-blank-black-background-vector_53876-66991.jpg?t=st=1717602321~exp=1717605921~hmac=29df297378b83189010a5f6b1cf4312f9abe0e48c322c4161986fbd5b8ee6ca8&w=1380" alt="Slide 2" class="mx-auto">
-                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50">
-                        <h1 class="text-4xl font-bold mb-2">Slide 2</h1>
-                        <p class="text-lg">Description for Slide 2</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
 

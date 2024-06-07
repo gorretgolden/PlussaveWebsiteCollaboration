@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Plussave</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    @livewireStyles
 
 </head>
 
@@ -51,7 +52,8 @@
 
         </div>
         <!-- Login button -->
-        <button  style="background-color: green" class=" text-white font-semibold py-2 px-3 rounded hover:bg-white hover:text-green-600 hover:border-transparent hidden sm:block">
+        <button style="background-color: green"
+            class=" text-white font-semibold py-2 px-3 rounded hover:bg-white hover:text-green-600 hover:border-transparent hidden sm:block">
             Apply for a Loan
         </button>
 
@@ -175,36 +177,14 @@
         });
 
 
-        //carousel home page
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.overflow-hidden > div');
 
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            updateSlide();
-        }
-
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-            updateSlide();
-        }
-
-        function updateSlide() {
-            const distance = currentSlide * -100;
-            document.querySelector('.overflow-hidden > div').style.transform = `translateX(${distance}%)`;
-        }
-
-        // Auto-scroll
-        setInterval(() => {
-            nextSlide();
-        }, 5000);
     </script>
 
 
 
 
 
-
+    @livewireScripts
 
 </body>
 
