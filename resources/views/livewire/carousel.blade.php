@@ -1,4 +1,4 @@
-<div class="relative w-full">
+<div class="relative w-full" >
     <div class="relative h-80 overflow-hidden rounded-bg-lg md:h-[500px]">
         @foreach($images as $index => $image)
             <div class="{{ $index === $currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0' }} transition-opacity duration-1000 ease-in-out absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('storage/' . str_replace('\\', '/', $image->image_path)) }}');">
