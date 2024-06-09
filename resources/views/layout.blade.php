@@ -187,9 +187,16 @@
 
 
 
-
-
     @livewireScripts
+
+    <script>
+        // Refreshing the Livewire component every 10 seconds
+        setInterval(function() {
+            Livewire.emit('fetchUpdates');
+        }, 10000);
+    </script>
+
+
 
 </body>
 
