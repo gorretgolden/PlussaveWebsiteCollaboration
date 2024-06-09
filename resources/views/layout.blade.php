@@ -24,7 +24,7 @@
     @vite('resources/js/app.js') --}}
 
     <!--navbar-->
-    <nav style="background-color: rgb(11, 97, 11)" class=" flex justify-between items-center p-4">
+    <nav  class=" flex justify-between items-center p-4 bg-green-700">
         <div class="flex items-center">
             <!-- Logo -->
             <a href="/">
@@ -90,9 +90,8 @@
 
 
     <!-- Subscription Section -->
-
     <section class="bg-salon bg-cover bg-center relative py-20"
-        style="background-image: url('https://img.freepik.com/free-vector/realistic-polygonal-background_23-2148923440.jpg?t=st=1717598729~exp=1717602329~hmac=edc93790c9aacb00dd145ee91191084c9e90a10405512896c491582f7ae4e850&w=2000') ">
+        style="background-image: url('https://img.freepik.com/free-photo/green-grass-wallpaper-fresh-green-grass-wallpapers-wallpaper-cave_1340-42685.jpg?t=st=1717916782~exp=1717920382~hmac=b300557944f89b027e2b2b64e2a66d174cb5156ef1c939c3791ec6a18961eaee&w=1800') ">
         <!-- Background Overlay -->
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="container mx-auto relative z-10 px-4">

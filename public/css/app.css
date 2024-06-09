@@ -580,6 +580,9 @@ video {
 .ml-4 {
   margin-left: 1rem;
 }
+.ml-8 {
+  margin-left: 2rem;
+}
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -628,6 +631,9 @@ video {
 .h-6 {
   height: 1.5rem;
 }
+.h-64 {
+  height: 16rem;
+}
 .h-8 {
   height: 2rem;
 }
@@ -646,11 +652,11 @@ video {
 .w-16 {
   width: 4rem;
 }
-.w-20 {
-  width: 5rem;
-}
 .w-48 {
   width: 12rem;
+}
+.w-52 {
+  width: 13rem;
 }
 .w-6 {
   width: 1.5rem;
@@ -746,13 +752,9 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(74 222 128 / var(--tw-border-opacity));
 }
-.border-green-500 {
+.border-green-700 {
   --tw-border-opacity: 1;
-  border-color: rgb(34 197 94 / var(--tw-border-opacity));
-}
-.border-green-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(22 163 74 / var(--tw-border-opacity));
+  border-color: rgb(21 128 61 / var(--tw-border-opacity));
 }
 .border-purple-600 {
   --tw-border-opacity: 1;
@@ -782,10 +784,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
-.bg-green-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 252 231 / var(--tw-bg-opacity));
-}
 .bg-green-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
@@ -793,6 +791,10 @@ video {
 .bg-green-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(21 128 61 / var(--tw-bg-opacity));
+}
+.bg-green-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 83 45 / var(--tw-bg-opacity));
 }
 .bg-lime-950 {
   --tw-bg-opacity: 1;
@@ -872,6 +874,10 @@ video {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .py-16 {
   padding-top: 4rem;
@@ -1053,6 +1059,44 @@ video {
     flex-shrink: 0;
     width: 100%;
     max-width: 300px; /* Adjust this value as needed */
+}
+
+.step-circle {
+    width: 4rem;
+    height: 4rem;
+    background-color: #15803D;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.step-content {
+    position: relative;
+}
+.step-content::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -1.25rem;
+    width: 1.5rem;
+    height: 0.25rem;
+    background-color: #15803D;
+    border-radius: 0.125rem;
+}
+.dashed-line {
+    position: relative;
+    height: 2rem;
+    width: 0.25rem;
+    background: repeating-linear-gradient(
+        to bottom,
+        #15803D,
+        #15803D 0.25rem,
+        transparent 0.25rem,
+        transparent 0.5rem
+    );
 }
 .hover\:border:hover {
   border-width: 1px;

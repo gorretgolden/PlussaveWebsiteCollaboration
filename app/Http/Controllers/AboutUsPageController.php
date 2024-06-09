@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\AboutUs;
+use App\Models\TeamMembers;
 use Illuminate\Http\Request;
 
 class AboutUsPageController extends Controller
@@ -13,6 +14,8 @@ class AboutUsPageController extends Controller
 
     {
         $aboutUs = AboutUs::limit(1)->first();
-        return view('pages.about-us',compact('aboutUs'));
+        $teamMembers = TeamMembers::all();
+
+        return view('pages.about-us',compact('aboutUs','teamMembers'));
     }
 }

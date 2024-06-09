@@ -6,3 +6,41 @@
     width: 100%;
     max-width: 300px; /* Adjust this value as needed */
 }
+
+.step-circle {
+    width: 4rem;
+    height: 4rem;
+    background-color: #15803D;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.step-content {
+    position: relative;
+}
+.step-content::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -1.25rem;
+    width: 1.5rem;
+    height: 0.25rem;
+    background-color: #15803D;
+    border-radius: 0.125rem;
+}
+.dashed-line {
+    position: relative;
+    height: 2rem;
+    width: 0.25rem;
+    background: repeating-linear-gradient(
+        to bottom,
+        #15803D,
+        #15803D 0.25rem,
+        transparent 0.25rem,
+        transparent 0.5rem
+    );
+}
