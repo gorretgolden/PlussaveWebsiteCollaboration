@@ -27,7 +27,7 @@
     <!-- Our Mission Section -->
     <section class="py-20 bg-gray-100">
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Our Mission</h2>
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-8">Our Mission</h2>
             <p class="text-gray-600 text-center mb-8">
                 {{ $aboutUs->mision }}
             </p>
@@ -52,6 +52,27 @@
                             and relaxing.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Our vision-->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+
+            <div class="flex flex-wrap items-center justify-center">
+                <div class="w-full md:w-1/2 p-4">
+                    <h2 class="text-2xl font-bold  text-gray-800 mb-8">{{ $aboutUs->vision_title }}</h2>
+                    <p class="text-gray-600 mb-4">
+                        {{ $aboutUs->vision }}
+                    </p>
+
+
+                </div>
+                <div class="w-full md:w-1/2 p-4 ">
+                    <img class="rounded-lg shadow-lg" src="{{ asset('storage/' . $aboutUs->image) }}">
+                </div>
+
             </div>
         </div>
     </section>
