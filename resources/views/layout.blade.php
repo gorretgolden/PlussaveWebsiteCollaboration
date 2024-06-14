@@ -231,6 +231,15 @@ $partners = App\Models\Partner::all();
             });
         });
 
+        document.addEventListener('initAutoScroll', function () {
+        setInterval(function () {
+            let container = document.querySelector('.grid');
+            container.scrollBy({ top: 0, left: 300, behavior: 'smooth' });
+        }, 60000); // Scroll every 1 minute
+    });
+
+
+
     </script>
 
 
