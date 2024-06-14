@@ -47,19 +47,19 @@ $partners = App\Models\Partner::all();
         <div class="hidden sm:flex space-x-4">
 
             <a href="{{ route('services') }}"
-                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">Our
+                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-bold mb-2">Our
                 Services</a>
 
             <a href="{{ route('about-us') }}"
-                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">About
+                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-bold mb-2">About
                 Us</a>
             <a href="{{ route('faqs') }}"
-                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">FAQs</a>
+                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-bold mb-2">FAQs</a>
             <a href="{{ route('contact-us') }}"
-                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">Contact
+                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-bold mb-2">Contact
                 Us</a>
             <a href="{{ route('contact-us') }}"
-                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">Blog</a>
+                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-bold mb-2">Blog</a>
 
         </div>
         <!-- Login button -->
@@ -75,14 +75,14 @@ $partners = App\Models\Partner::all();
     <div class="sm:hidden" id="mobile-menu" style="display: none;">
         <div class="bg-black p-4">
             <a href="#"
-                class="block text-white hover:bg-purple-900 rounded-md hover:text-white px-3 py-2 text-base font-semi-bold mb-2">Services</a>
+                class="block text-white hover:bg-purple-900 rounded-md hover:text-white px-3 py-2 text-base font-bold mb-2">Services</a>
             <a href="#"
-                class="block text-white hover:bg-purple-900 rounded-md hover:text-white px-3 py-2 text-base font-semi-bold mb-2">Bookings</a>
+                class="block text-white hover:bg-purple-900 rounded-md hover:text-white px-3 py-2 text-base font-bold mb-2">Bookings</a>
             <a href="#"
-                class="block text-white hover:bg-purple-900 rounded-md hover:text-white px-3 py-2 text-base font-semi-bold mb-2">About
+                class="block text-white hover:bg-purple-900 rounded-md hover:text-white px-3 py-2 text-base font-bold mb-2">About
                 Us</a>
             <a href="#"
-                class="block text-white hover:bg-purple-900 rounded-md hover:text-white px-3 py-2 text-base font-semi-bold mb-2">Contact
+                class="block text-white hover:bg-purple-900 rounded-md hover:text-white px-3 py-2 text-base font-bold mb-2">Contact
                 Us</a>
             <button wire:click="toggleModal"
                 class="border border-purple-600 text-white font-semibold py-2 px-4 rounded hover:bg-white hover:text-purple-600 hover:border-transparent mt-4 ml-3">Login</button>

@@ -50,7 +50,7 @@
 
 
     <!--why choose us-->
-    <section class="py-10 bg-white">
+    <section class="py-12 bg-white">
 
         <div class="container mx-auto px-4 mb-10">
             <!-- Section Heading -->
@@ -129,7 +129,7 @@
     <!--How we give loans-->
 
     <section class=" py-20 mt-10 secondary-bg">
-        <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">How We Give Loans</h2>
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">How We Give Loans</h2>
 
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -137,16 +137,11 @@
                 <div class=" p-4">
                     <div class="p-4">
                         <div class="relative flex justify-center items-center">
-                            <!-- Blue SVG Circle in the background -->
-                            <div class="absolute z-0">
-                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="fill-current text-blue-500 w-40 h-40">
-                                    <circle cx="100" cy="100" r="100"/>
-                                </svg>
-                            </div>
+
 
                             <!-- Circular Image -->
                             <div class="relative z-10 rounded-full border-4 border-gray-200 overflow-hidden">
-                                <img class="rounded-full w-10 h-140 object-cover" src="https://img.freepik.com/free-photo/portrait-professional-elegant-businesswoman_23-2150917130.jpg?t=st=1718366140~exp=1718369740~hmac=5183569422c69decf96cae2b4624d6dd3a4aba754985ee83ab7b007c513bdf93&w=1060" alt="Businesswoman">
+                                <img class="rounded-full w-full object-cover" src="https://img.freepik.com/free-photo/portrait-professional-elegant-businesswoman_23-2150917130.jpg?t=st=1718366140~exp=1718369740~hmac=5183569422c69decf96cae2b4624d6dd3a4aba754985ee83ab7b007c513bdf93&w=1060" alt="Businesswoman">
                             </div>
                         </div>
                     </div>
@@ -210,82 +205,23 @@
 
 
 
-
-
-        <div class="container mx-auto py-16 px-6">
-            <div class="flex flex-col md:flex-row items-center justify-between">
-                <!-- Title and text on the right -->
-                <div class="md:w-1/2 md:ml-6 mb-5 p-6">
-                    <h2 class="text-3xl font-bold mb-4">Fintech Insights</h2>
-                    <p class="text-gray-700 leading-relaxed mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Vivamus scelerisque felis vel nibh lacinia placerat. Proin eget dolor ultrices, consectetur magna
-                        eget, vehicula sapien. Donec ac ultricies ligula. Integer ut risus leo.</p>
-                    <p class="text-gray-700 leading-relaxed">Nam ultricies, ex sit amet aliquet dapibus, magna nulla tempor
-                        tortor, ut consectetur odio erat eget turpis. Suspendisse potenti. Pellentesque commodo est id
-                        mauris rhoncus, ut vehicula arcu pretium.</p>
-                    <p class="text-gray-700 leading-relaxed mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Vivamus scelerisque felis vel nibh lacinia placerat. Proin eget dolor ultrices, consectetur magna
-                        eget, vehicula sapien. Donec ac ultricies ligula. Integer ut risus leo.</p>
-
-                </div>
-                <div class="md:w-1/2 mb-6 md:mb-0">
-                    <img class="w-full h-auto rounded-lg"
-                        src="https://img.freepik.com/free-photo/business-colleagues-studying-reports_74855-1139.jpg?t=st=1717752645~exp=1717756245~hmac=726d4428d263476c46e1f6ebe2d0a089d75a928b2c7b7cf01214a58afe46e224&w=1800"
-                        alt="Image">
-                </div>
-
-            </div>
-        </div>
-
-
-
         <!-- Apply for Loan Section -->
         <section class="py-16">
             <div class="container mx-auto">
-                <h2 class="text-3xl font-bold text-center text-green-900 mb-8">Apply for a Loan</h2>
+
                 @livewire('loan-application-form')
             </div>
         </section>
 
 
         <!-- Testimonial Section -->
-        <section class="bg-green-700 py-16">
+        <section class="secondary-bg py-16">
             <div class="container mx-auto">
-                <h2 class="text-3xl font-bold text-center text-white mb-8">What Our Customers Say</h2>
+                <h2 class="text-3xl font-bold text-center mb-8">What Our Customers Say</h2>
                 <!-- Testimonial Client Component -->
                 <livewire:testimonial-client-component />
-                {{-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Testimonial 1 -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:border-green-600 transition duration-300">
-                        <img src="https://img.freepik.com/free-photo/confident-african-businesswoman-smiling-closeup-portrait-jobs-career-campaign_53876-143280.jpg?t=st=1717592869~exp=1717596469~hmac=56882dbb7e44dba15a2eca030e85af6b79dc109bd3251d5751e0902998ca3201&w=2000"
-                            alt="Client 1" class="rounded-full h-16 w-16 flex-shrink-0 mr-4">
-                        <div class="p-3">
-                            <p class="text-green-800 mb-4">"Finetech helped me to manage my finances efficiently. I highly
-                                recommend their services."</p>
-                            <p class="text-green-700 font-semibold">- John Doe</p>
-                        </div>
-                    </div>
-                    <!-- Testimonial 2 -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:border-green-600 transition duration-300">
-                        <img src="https://img.freepik.com/free-photo/confident-african-businesswoman-smiling-closeup-portrait-jobs-career-campaign_53876-143280.jpg?t=st=1717592869~exp=1717596469~hmac=56882dbb7e44dba15a2eca030e85af6b79dc109bd3251d5751e0902998ca3201&w=2000"
-                            alt="Client 2" class="rounded-full h-16 w-16 flex-shrink-0 mr-4">
-                        <div>
-                            <p class="text-green-800 mb-4">"Applying for a loan was so easy with Finetech. I got the money
-                                I needed quickly without any hassle."</p>
-                            <p class="text-green-700 font-semibold">- Jane Smith</p>
-                        </div>
-                    </div>
-                    <!-- Testimonial 3 -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:border-green-600 transition duration-300">
-                        <img src="https://img.freepik.com/free-photo/confident-african-businesswoman-smiling-closeup-portrait-jobs-career-campaign_53876-143280.jpg?t=st=1717592869~exp=1717596469~hmac=56882dbb7e44dba15a2eca030e85af6b79dc109bd3251d5751e0902998ca3201&w=2000"
-                            alt="Client 3" class="rounded-full h-16 w-16 flex-shrink-0 mr-4">
-                        <div>
-                            <p class="text-green-800 mb-4">"I've been using Finetech for a while now and I'm impressed with
-                                their commitment to customer satisfaction."</p>
-                            <p class="text-green-700 font-semibold">- David Johnson</p>
-                        </div>
-                    </div>
-                </div> --}}
+
+
             </div>
         </section>
 

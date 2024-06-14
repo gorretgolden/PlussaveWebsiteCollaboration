@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-<section class=" bg-purple-600 ">
+<section >
 
      <!-- Hero Section -->
  <livewire:hero-section type="contact" />
