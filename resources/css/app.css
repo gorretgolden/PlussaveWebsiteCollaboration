@@ -60,3 +60,12 @@
     border-radius: 50%;
     object-fit: cover;
 }
+.secondary-bg{
+    background-color: #f9fafc;
+}
+.underline-green{
+    border: 2px solid green;
+    border-style: dashed;
+    border-width: 100;
+}
+

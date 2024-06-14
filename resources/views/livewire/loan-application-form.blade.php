@@ -1,10 +1,10 @@
-<div class=" bg-gray-100 shadow-xl p-8 rounded-lg" >
+<div >
     <div class="flex flex-col md:flex-row items-center justify-center">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-white">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ">
             <!-- Column 1 -->
             <div class="text-center p-4">
                 <!-- Vector Image for Loan Application -->
-                <img src="https://img.freepik.com/free-vector/fill-out-concept-illustration_114360-5550.jpg?t=st=1717933215~exp=1717936815~hmac=331365bd275a76a06db3f0d935e0f519a6812df8eb9d9089f66d062477552aab&w=1060" alt="Loan Application" class=" w-64 md:w-1/2 max-w-xs md:max-w-none">
+                <img src="https://img.freepik.com/free-vector/fill-out-concept-illustration_114360-5550.jpg?t=st=1717933215~exp=1717936815~hmac=331365bd275a76a06db3f0d935e0f519a6812df8eb9d9089f66d062477552aab&w=1060" alt="Loan Application" class=" w-full md:w-1/2 max-w-xs md:max-w-none">
             </div>
 
 

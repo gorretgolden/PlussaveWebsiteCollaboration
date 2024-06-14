@@ -12,152 +12,196 @@
     </div>
     <br>
 
-      <!--service types-->
-      <section>
+    <!--In need of a quick loan-->
+    <div class="container mx-auto py-16 px-6">
+
+        <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 md:ml-6 mb-5 p-6">
+                <h2 class="text-3xl font-bold mb-10 text-green-700">In need of a quick secure loan?</h2>
+                <h3 class="text-gray-700 leading-relaxed mb-6 ">Plus Save makes life easy with simple secured loans that you can apply for in minutes. Get a quick quick loan today, by visiting your nearest branch for your loan request or make an online application. You will always be updated about your loan status. Fo
+                </h3>
+                <p class="text-gray-700 leading-relaxed">Nam ultricies, ex sit amet aliquet dapibus, magna nulla tempor
+                    tortor, ut consectetur odio erat eget turpis. Suspendisse potenti. Pellentesque commodo est id mauris
+                    rhoncus, ut vehicula arcu pretium.</p>
+                    <button
+                    class="bg-green-700 text-white mt-10 font-semibold py-2 px-3 rounded hover:bg-white hover:text-green-600 hover:border-transparent hidden sm:block">
+                    Apply for a Loan
+                </button>
+
+
+            </div>
+            <!-- Image on the left -->
+            <div class="md:w-1/2 mb-6 md:mb-0">
+                <img class=" w-1full h-auto rounded-lg"
+                    src="https://plussavefinancialsolutions.com/uploads/home/1938001059.webp"
+                    alt="Image">
+            </div>
+            <!-- Title and text on the right -->
+
+        </div>
+    </div>
+
+    <!--service types-->
+    <section class="secondary-bg">
 
         @livewire('service-types')
 
-      </section>
+    </section>
 
 
-        <!--why choose us-->
-        <section class="py-4 bg-white">
+    <!--why choose us-->
+    <section class="py-10 bg-white">
 
-            <div class="container mx-auto px-4 mb-10">
-                <!-- Section Heading -->
-                <div class="mb-12 ">
-                    <h2 class="text-2xl font-bold text-gray-800 py-6">Why Choose Us</h2>
-                    <div class="border-b-4  border-green-700"></div>
+        <div class="container mx-auto px-4 mb-10">
+            <!-- Section Heading -->
+            <div class="mb-12 ">
+                <h2 class="text-2xl font-bold text-gray-800 py-6">Why Choose Us</h2>
+                <div class="border-b-4  border-green-700"></div>
 
-                    <p class="text-gray-600 mt-2 py-3">Discover the benefits of our services and products today</p>
-                </div>
-                <!-- Reasons Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Reason 1 -->
-                    <div class="flex items-center p-4 bg-gray-50 rounded-lg shadow-lg">
-                        <div
-                            class="w-16 h-16 flex-shrink-0 bg-green-700 text-white rounded-full flex items-center justify-center">
-
-                            <svg class="w-8 h-8 icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
-                                </path>
-                            </svg>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-xl font-semibold text-gray-800">Professional Staff</h3>
-                            <p class="text-gray-600 mt-2">Our team consists of experienced professionals dedicated to
-                                providing top-notch services.</p>
-                        </div>
-                    </div>
-                    <!-- Reason 2 -->
-                    <div class="flex items-center p-6 bg-gray-50 rounded-lg shadow-lg">
-                        <div
-                            class="w-16 h-16 flex-shrink-0 bg-green-700 text-white rounded-full flex items-center justify-center">
-                            <!-- Icon (use any appropriate icon) -->
-                            <svg class="w-8 h-8 icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3">
-                                </path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9.75 9.75a8.003 8.003 0 0110.386-1.377m-.118 7.866A8.003 8.003 0 015.37 5.37">
-                                </path>
-                            </svg>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-xl font-semibold text-gray-800">Convenient Appointments</h3>
-                            <p class="text-gray-600 mt-2">We offer flexible scheduling options to accommodate your busy
-                                lifestyle.</p>
-                        </div>
-                    </div>
-                    <!-- Reason 3 -->
-                    <div class="flex items-center p-6 bg-gray-50 rounded-lg shadow-lg">
-                        <div
-                            class="w-16 h-16 flex-shrink-0 bg-green-700 text-white rounded-full flex items-center justify-center">
-                            <!-- Icon (use any appropriate icon) -->
-                            <svg class="w-8 h-8 icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12h.01M15 12h.01M12 12h.01M21 12.02a9.953 9.953 0 01-9 5.98 9.953 9.953 0 01-9-5.98m18 0a9.935 9.935 0 00-4.5-8.536m-9 0A9.935 9.935 0 003 12.02m18 0c0-1.5-.375-2.91-1.07-4.165a8.017 8.017 0 00-7.93-4.87m-9 0C3.375 9.11 3 10.52 3 12.02m18 0c0 1.75-.375 3.29-1.07 4.55a8.017 8.017 0 01-7.93 4.47m-9 0C3.375 14.31 3 12.77 3 11.02m18 0a9.935 9.935 0 00-4.5-8.536M7.03 2.456a8.017 8.017 0 013.5-1.456m3.5 1.456a8.017 8.017 0 013.5 1.456m-7-1.456A8.017 8.017 0 0112 2.022M2 12c0-5.2 4-9.502 8.997-9.998M13 21c0-5.2-4-9.502-8.997-9.998">
-                                </path>
-                            </svg>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-xl font-semibold text-gray-800">High-Quality Products</h3>
-                            <p class="text-gray-600 mt-2">We use only the best products to ensure your satisfaction and
-                                long-lasting results.</p>
-                        </div>
-                    </div>
-                    <!-- Add more reasons as needed -->
-                </div>
+                <p class="text-gray-600 mt-2 py-3">Discover the benefits of our services and products today</p>
             </div>
-        </section>
+            <!-- Reasons Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Reason 1 -->
+                <div class="flex items-center p-4 bg-gray-50 rounded-lg shadow-lg">
+                    <div
+                        class="w-16 h-16 flex-shrink-0 bg-green-700 text-white rounded-full flex items-center justify-center">
 
-
-    <div class="container mx-auto py-16 px-6">
-        <div class="flex flex-col md:flex-row items-center justify-between">
-            <!-- Image on the left -->
-            <div class="md:w-1/2 mb-6 md:mb-0">
-                <img class="w-full h-auto rounded-lg" src="https://img.freepik.com/free-photo/business-colleagues-studying-reports_74855-1139.jpg?t=st=1717752645~exp=1717756245~hmac=726d4428d263476c46e1f6ebe2d0a089d75a928b2c7b7cf01214a58afe46e224&w=1800" alt="Image">
-            </div>
-            <!-- Title and text on the right -->
-            <div class="md:w-1/2 md:ml-6 mb-5 p-6" >
-                <h2 class="text-3xl font-bold mb-4">Fintech Insights</h2>
-                <p class="text-gray-700 leading-relaxed mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque felis vel nibh lacinia placerat. Proin eget dolor ultrices, consectetur magna eget, vehicula sapien. Donec ac ultricies ligula. Integer ut risus leo.</p>
-                <p class="text-gray-700 leading-relaxed">Nam ultricies, ex sit amet aliquet dapibus, magna nulla tempor tortor, ut consectetur odio erat eget turpis. Suspendisse potenti. Pellentesque commodo est id mauris rhoncus, ut vehicula arcu pretium.</p>
-                <p class="text-gray-700 leading-relaxed mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque felis vel nibh lacinia placerat. Proin eget dolor ultrices, consectetur magna eget, vehicula sapien. Donec ac ultricies ligula. Integer ut risus leo.</p>
-
+                        <svg class="w-8 h-8 icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Professional Staff</h3>
+                        <p class="text-gray-600 mt-2">Our team consists of experienced professionals dedicated to
+                            providing top-notch services.</p>
+                    </div>
+                </div>
+                <!-- Reason 2 -->
+                <div class="flex items-center p-6 bg-gray-50 rounded-lg shadow-lg">
+                    <div
+                        class="w-16 h-16 flex-shrink-0 bg-green-700 text-white rounded-full flex items-center justify-center">
+                        <!-- Icon (use any appropriate icon) -->
+                        <svg class="w-8 h-8 icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.75 9.75a8.003 8.003 0 0110.386-1.377m-.118 7.866A8.003 8.003 0 015.37 5.37">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Convenient Appointments</h3>
+                        <p class="text-gray-600 mt-2">We offer flexible scheduling options to accommodate your busy
+                            lifestyle.</p>
+                    </div>
+                </div>
+                <!-- Reason 3 -->
+                <div class="flex items-center p-6 bg-gray-50 rounded-lg shadow-lg">
+                    <div
+                        class="w-16 h-16 flex-shrink-0 bg-green-700 text-white rounded-full flex items-center justify-center">
+                        <!-- Icon (use any appropriate icon) -->
+                        <svg class="w-8 h-8 icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12h.01M15 12h.01M12 12h.01M21 12.02a9.953 9.953 0 01-9 5.98 9.953 9.953 0 01-9-5.98m18 0a9.935 9.935 0 00-4.5-8.536m-9 0A9.935 9.935 0 003 12.02m18 0c0-1.5-.375-2.91-1.07-4.165a8.017 8.017 0 00-7.93-4.87m-9 0C3.375 9.11 3 10.52 3 12.02m18 0c0 1.75-.375 3.29-1.07 4.55a8.017 8.017 0 01-7.93 4.47m-9 0C3.375 14.31 3 12.77 3 11.02m18 0a9.935 9.935 0 00-4.5-8.536M7.03 2.456a8.017 8.017 0 013.5-1.456m3.5 1.456a8.017 8.017 0 013.5 1.456m-7-1.456A8.017 8.017 0 0112 2.022M2 12c0-5.2 4-9.502 8.997-9.998M13 21c0-5.2-4-9.502-8.997-9.998">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-semibold text-gray-800">High-Quality Products</h3>
+                        <p class="text-gray-600 mt-2">We use only the best products to ensure your satisfaction and
+                            long-lasting results.</p>
+                    </div>
+                </div>
+                <!-- Add more reasons as needed -->
             </div>
         </div>
-    </div>
+    </section>
+
+
+
 
 
     <!--How we give loans-->
 
-    <section class="py-12 bg-gray-100">
+    <section class=" py-20 mt-10 secondary-bg">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">How We Give Loans</h2>
+
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">How We Give Loans</h2>
-            <div class="relative">
-                <!-- Step 1 -->
-                <div class="flex items-center mb-12">
-                    <div class="step-circle">1</div>
-                    <div class="step-content ml-8">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Apply Online</h3>
-                        <p class="text-gray-600">Fill out our simple online application form with your personal and financial details.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Column 1 -->
+                <div class=" p-4">
+                    <div class="p-4">
+                        <div class="relative flex justify-center items-center">
+                            <!-- Blue SVG Circle in the background -->
+                            <div class="absolute z-0">
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="fill-current text-blue-500 w-40 h-40">
+                                    <circle cx="100" cy="100" r="100"/>
+                                </svg>
+                            </div>
+
+                            <!-- Circular Image -->
+                            <div class="relative z-10 rounded-full border-4 border-gray-200 overflow-hidden">
+                                <img class="rounded-full w-10 h-140 object-cover" src="https://img.freepik.com/free-photo/portrait-professional-elegant-businesswoman_23-2150917130.jpg?t=st=1718366140~exp=1718369740~hmac=5183569422c69decf96cae2b4624d6dd3a4aba754985ee83ab7b007c513bdf93&w=1060" alt="Businesswoman">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Column 2 -->
+                <div class="relative">
+                    <!-- Step 1 -->
+                    <div class="flex items-center mb-12">
+                        <div class="step-circle">1</div>
+                        <div class="step-content ml-8">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Apply Online</h3>
+                            <p class="text-gray-600">Fill out our simple online application form with your personal and
+                                financial details.</p>
+                        </div>
+                    </div>
+                    <!-- Dashed Line -->
+                    <div class="dashed-line"></div>
+                    <!-- Step 2 -->
+                    <div class="flex items-center mb-12">
+                        <div class="step-circle">2</div>
+                        <div class="step-content ml-8">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Verification</h3>
+                            <p class="text-gray-600">Our team reviews your application and verifies your information.</p>
+                        </div>
+                    </div>
+                    <!-- Dashed Line -->
+                    <div class="dashed-line"></div>
+                    <!-- Step 3 -->
+                    <div class="flex items-center mb-12">
+                        <div class="step-circle">3</div>
+                        <div class="step-content ml-8">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Get Approved</h3>
+                            <p class="text-gray-600">Once verified, your loan is approved and you receive the funds in your
+                                account.</p>
+                        </div>
+                    </div>
+                    <!-- Dashed Line -->
+                    <div class="dashed-line"></div>
+                    <!-- Step 4 -->
+                    <div class="flex items-center mb-12">
+                        <div class="step-circle">4</div>
+                        <div class="step-content ml-8">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">Repay Easily</h3>
+                            <p class="text-gray-600">Make easy monthly repayments through our secure platform.</p>
+                        </div>
                     </div>
                 </div>
-                <!-- Dashed Line -->
-                <div class="dashed-line"></div>
-                <!-- Step 2 -->
-                <div class="flex items-center mb-12">
-                    <div class="step-circle">2</div>
-                    <div class="step-content ml-8">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Verification</h3>
-                        <p class="text-gray-600">Our team reviews your application and verifies your information.</p>
-                    </div>
-                </div>
-                <!-- Dashed Line -->
-                <div class="dashed-line"></div>
-                <!-- Step 3 -->
-                <div class="flex items-center mb-12">
-                    <div class="step-circle">3</div>
-                    <div class="step-content ml-8">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Get Approved</h3>
-                        <p class="text-gray-600">Once verified, your loan is approved and you receive the funds in your account.</p>
-                    </div>
-                </div>
-                <!-- Dashed Line -->
-                <div class="dashed-line"></div>
-                <!-- Step 4 -->
-                <div class="flex items-center mb-12">
-                    <div class="step-circle">4</div>
-                    <div class="step-content ml-8">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Repay Easily</h3>
-                        <p class="text-gray-600">Make easy monthly repayments through our secure platform.</p>
-                    </div>
-                </div>
+
             </div>
         </div>
+
+
     </section>
 
 
@@ -170,16 +214,24 @@
 
         <div class="container mx-auto py-16 px-6">
             <div class="flex flex-col md:flex-row items-center justify-between">
-              <!-- Title and text on the right -->
-              <div class="md:w-1/2 md:ml-6 mb-5 p-6" >
-                <h2 class="text-3xl font-bold mb-4">Fintech Insights</h2>
-                <p class="text-gray-700 leading-relaxed mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque felis vel nibh lacinia placerat. Proin eget dolor ultrices, consectetur magna eget, vehicula sapien. Donec ac ultricies ligula. Integer ut risus leo.</p>
-                <p class="text-gray-700 leading-relaxed">Nam ultricies, ex sit amet aliquet dapibus, magna nulla tempor tortor, ut consectetur odio erat eget turpis. Suspendisse potenti. Pellentesque commodo est id mauris rhoncus, ut vehicula arcu pretium.</p>
-                <p class="text-gray-700 leading-relaxed mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque felis vel nibh lacinia placerat. Proin eget dolor ultrices, consectetur magna eget, vehicula sapien. Donec ac ultricies ligula. Integer ut risus leo.</p>
+                <!-- Title and text on the right -->
+                <div class="md:w-1/2 md:ml-6 mb-5 p-6">
+                    <h2 class="text-3xl font-bold mb-4">Fintech Insights</h2>
+                    <p class="text-gray-700 leading-relaxed mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Vivamus scelerisque felis vel nibh lacinia placerat. Proin eget dolor ultrices, consectetur magna
+                        eget, vehicula sapien. Donec ac ultricies ligula. Integer ut risus leo.</p>
+                    <p class="text-gray-700 leading-relaxed">Nam ultricies, ex sit amet aliquet dapibus, magna nulla tempor
+                        tortor, ut consectetur odio erat eget turpis. Suspendisse potenti. Pellentesque commodo est id
+                        mauris rhoncus, ut vehicula arcu pretium.</p>
+                    <p class="text-gray-700 leading-relaxed mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Vivamus scelerisque felis vel nibh lacinia placerat. Proin eget dolor ultrices, consectetur magna
+                        eget, vehicula sapien. Donec ac ultricies ligula. Integer ut risus leo.</p>
 
-            </div>
+                </div>
                 <div class="md:w-1/2 mb-6 md:mb-0">
-                    <img class="w-full h-auto rounded-lg" src="https://img.freepik.com/free-photo/business-colleagues-studying-reports_74855-1139.jpg?t=st=1717752645~exp=1717756245~hmac=726d4428d263476c46e1f6ebe2d0a089d75a928b2c7b7cf01214a58afe46e224&w=1800" alt="Image">
+                    <img class="w-full h-auto rounded-lg"
+                        src="https://img.freepik.com/free-photo/business-colleagues-studying-reports_74855-1139.jpg?t=st=1717752645~exp=1717756245~hmac=726d4428d263476c46e1f6ebe2d0a089d75a928b2c7b7cf01214a58afe46e224&w=1800"
+                        alt="Image">
                 </div>
 
             </div>
@@ -200,7 +252,9 @@
         <section class="bg-green-700 py-16">
             <div class="container mx-auto">
                 <h2 class="text-3xl font-bold text-center text-white mb-8">What Our Customers Say</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial Client Component -->
+                <livewire:testimonial-client-component />
+                {{-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Testimonial 1 -->
                     <div class="bg-white p-6 rounded-lg shadow-md hover:border-green-600 transition duration-300">
                         <img src="https://img.freepik.com/free-photo/confident-african-businesswoman-smiling-closeup-portrait-jobs-career-campaign_53876-143280.jpg?t=st=1717592869~exp=1717596469~hmac=56882dbb7e44dba15a2eca030e85af6b79dc109bd3251d5751e0902998ca3201&w=2000"
@@ -231,7 +285,7 @@
                             <p class="text-green-700 font-semibold">- David Johnson</p>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </section>
 

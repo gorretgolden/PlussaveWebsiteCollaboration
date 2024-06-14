@@ -230,6 +230,7 @@ $partners = App\Models\Partner::all();
                     .display === "") ? "block" : "none";
             });
         });
+
     </script>
 
 
