@@ -1,3 +1,8 @@
+<?php
+$partners = App\Models\Partner::all();
+
+?>
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
@@ -24,7 +29,7 @@
     @vite('resources/js/app.js') --}}
 
     <!--navbar-->
-    <nav  class=" flex justify-between items-center p-4 bg-green-700">
+    <nav class=" flex justify-between items-center p-4 bg-green-700">
         <div class="flex items-center">
             <!-- Logo -->
             <a href="/">
@@ -42,17 +47,18 @@
         <div class="hidden sm:flex space-x-4">
 
             <a href="{{ route('services') }}"
-                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">Our Services</a>
+                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">Our
+                Services</a>
 
             <a href="{{ route('about-us') }}"
                 class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">About
                 Us</a>
-                <a href="{{ route('contact-us') }}"
+            <a href="{{ route('contact-us') }}"
                 class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">FAQs</a>
             <a href="{{ route('contact-us') }}"
                 class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">Contact
                 Us</a>
-                <a href="{{ route('contact-us') }}"
+            <a href="{{ route('contact-us') }}"
                 class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">Blog</a>
 
         </div>
@@ -87,6 +93,24 @@
     <main>
         @yield('content')
     </main>
+
+    <!--Partners-->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Our Partners</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    @foreach ($partners as $partner)
+                        <div class="swiper-slide">
+                            <img src="{{ asset('storage/' . $partner->image) }}" alt="{{ $partner->name }}">
+                        </div>
+                    @endforeach
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- Subscription Section -->
@@ -170,8 +194,35 @@
         </div>
     </footer>
 
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
+       var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 30,
+                },
+            }
+        });
         document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("mobile-menu-button").addEventListener("click", function() {
                 var mobileMenu = document.getElementById("mobile-menu");
@@ -179,9 +230,6 @@
                     .display === "") ? "block" : "none";
             });
         });
-
-
-
     </script>
 
 
