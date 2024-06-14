@@ -126,7 +126,7 @@
                 <div class="flex flex-wrap justify-center">
                     @foreach ($teamMembers as $teamMember)
                         <div class="w-full md:w-1/4 p-4">
-                            <div class="bg-gray-100 p-6 rounded-lg shadow-lg text-center">
+                            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
                                 <div class="w-48 h-64 mx-auto mb-4">
                                     <img src="{{ asset('storage/' . $teamMember->image) }}" alt="{{ $teamMember->name }}"
                                         class="w-full h-full object-cover">

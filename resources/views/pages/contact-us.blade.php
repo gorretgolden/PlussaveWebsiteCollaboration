@@ -3,48 +3,18 @@
 @section('content')
 <section class=" bg-purple-600 ">
 
-    <div class="mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class=" text-white pl-10 ">
-                <h1 class="text-2xl font-bold pt-20 leading-10  ">
-                    Transform your beauty at the
-                    comformt of your home with our
-                    hair dressing manicure and pedicure experts</h1>
-
-                <h4 class="text-white text-xl  pt-6 leading-relaxed ">Make orders for hair dressing, manicure
-                    and pedicure <br> services today</h4>
-                <div class="book-now-btn  pt-10 py-10">
-                    <button class=" bg-white text-purple-600 font-semibold py-4 px-8  rounded-md    shadow-5">
-                        Book now</button>
-                </div>
-
-            </div>
-
-            <div class=" text-white p-6 rounded-lg">
-                {{-- <img class="w-full mt-5 object-cover" src="{{ asset('images/header-home-image.png') }}" /> --}}
-
-            </div>
-        </div>
-
-
+     <!-- Hero Section -->
+ <livewire:hero-section type="contact" />
 
 
 
 </section>
-    <div class="text-center h-24 mt-20">
-        <h2 class=" text-center text-purple-900 font-bold text-2xl">Contact Us Today</h2>
-        <h4 class="p-4">Any questions or remarks just write us a message</h4>
 
 
-    </div>
-
-
-
-
-    <div class="container mx-auto px-4 py-4  mt-10">
+    <div class="container mx-auto px-4 py-4  mt-10  mb-10">
         <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-20">
 
-            <div class="py-6 px-10 bg-purple-50 shadow-md rounded ">
+            <div class="py-6 px-10 bg-white shadow-md rounded ">
                 <h4 class=" font-bold text-lg p-6">Contact Information</h4>
                 <div class="flex justify-start py-4 px-6">
                     <svg class="w-6 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -99,8 +69,20 @@
                 </div>
 
             </div>
-            @livewire('contact-form-component')
+
+            <livewire:contact-form/>
 
         </div>
     </div>
+
+
+    <!--Google maps-->
+    {{-- <div class="p-8">
+        <!-- Google Maps Section -->
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-6">Our Location</h2>
+        <livewire:contact-map-component />
+    </div> --}}
+
+
+
 @endsection
