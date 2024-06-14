@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Hero Section -->
-    @livewire('hero-section')
+    <livewire:hero-section type="about" />
 
     <!--About us-->
     <section class="py-20 bg-white">

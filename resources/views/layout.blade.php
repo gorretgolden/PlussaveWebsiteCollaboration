@@ -53,7 +53,7 @@ $partners = App\Models\Partner::all();
             <a href="{{ route('about-us') }}"
                 class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">About
                 Us</a>
-            <a href="{{ route('contact-us') }}"
+            <a href="{{ route('faqs') }}"
                 class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">FAQs</a>
             <a href="{{ route('contact-us') }}"
                 class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-semi-bold mb-2">Contact
@@ -95,7 +95,7 @@ $partners = App\Models\Partner::all();
     </main>
 
     <!--Partners-->
-    <section class="py-12 bg-white">
+    {{-- <section class="py-12 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Our Partners</h2>
             <div class="swiper-container">
@@ -110,7 +110,7 @@ $partners = App\Models\Partner::all();
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
 
     <!-- Subscription Section -->

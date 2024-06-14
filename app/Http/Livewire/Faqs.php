@@ -4,18 +4,19 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use App\Models\Faq;
+use Livewire\WithPagination;
 
 class Faqs extends Component
-{
-    public $faqs;
 
-    public function mount()
-    {
-        $this->faqs = Faq::all();
-    }
+{
+    use WithPagination;
 
     public function render()
     {
-        return view('livewire.faqs');
+        $faqs = Faq::paginate(6); // Fetch paginated FAQs
+
+        return view('livewire.faqs', [
+            'faqs' => $faqs
+        ]);
     }
 }
