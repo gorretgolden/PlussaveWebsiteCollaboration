@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddRouteToServiceTypesTable extends Migration
+class CreateAccountTypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,12 @@ class AddRouteToServiceTypesTable extends Migration
      */
     public function up()
     {
-        Schema::table('service_types', function (Blueprint $table) {
-            $table->string('route')->after('image');
+        Schema::create('account_types', function (Blueprint $table) {
+            $table->id();
+            $table->string('title');
+            $table->text('description');
+            $table->string('image');
+            $table->timestamps();
         });
     }
 
@@ -25,8 +29,6 @@ class AddRouteToServiceTypesTable extends Migration
      */
     public function down()
     {
-        Schema::table('service_types', function (Blueprint $table) {
-            $table->dropColumn('route');
-        });
+        Schema::dropIfExists('account_types');
     }
 }

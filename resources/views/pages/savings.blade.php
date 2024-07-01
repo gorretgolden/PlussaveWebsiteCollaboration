@@ -4,7 +4,7 @@
 <section >
 
      <!-- Hero Section -->
- <livewire:hero-section type="contact" />
+ <livewire:hero-section type="savings" />
 
 
 
