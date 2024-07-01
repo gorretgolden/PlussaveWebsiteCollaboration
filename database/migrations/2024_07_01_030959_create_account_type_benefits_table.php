@@ -15,6 +15,8 @@ class CreateAccountTypeBenefitsTable extends Migration
     {
         Schema::create('account_type_benefits', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('account_type_id')->constrained()->onDelete('cascade');
+            $table->string('benefit');
             $table->timestamps();
         });
     }
