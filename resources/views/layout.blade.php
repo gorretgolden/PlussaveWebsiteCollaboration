@@ -52,7 +52,7 @@ $partners = App\Models\Partner::all();
                     Our Services
                 </button>
                 <div id="services-dropdown"
-                    class="hidden absolute bg-white shadow-lg rounded-md mt-2 z-20 w-48">
+                    class="hidden absolute bg-white shadow-lg rounded-md mt-2 z-50 w-40">
                     <a href="{{ route('services.savings') }}"
                         class="block text-gray-800 px-4 py-2 hover:bg-gray-100">Savings</a>
                     <a href="{{ route('services.savings') }}"
@@ -211,6 +211,7 @@ $partners = App\Models\Partner::all();
         document.getElementById('services-button').addEventListener('click', function () {
             const dropdown = document.getElementById('services-dropdown');
             dropdown.classList.toggle('hidden');
+            console.log('Dropdown toggled');
         });
 
         // Close the dropdown if clicked outside
@@ -220,12 +221,14 @@ $partners = App\Models\Partner::all();
 
             if (!button.contains(event.target) && !dropdown.contains(event.target)) {
                 dropdown.classList.add('hidden');
+                console.log('Dropdown closed');
             }
         });
 
         document.getElementById('mobile-menu-button').addEventListener('click', function () {
             const menu = document.querySelector('.sm\\:flex');
             menu.classList.toggle('hidden');
+            console.log('Mobile menu toggled');
         });
     </script>
 

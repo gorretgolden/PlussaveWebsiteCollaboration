@@ -1,6 +1,6 @@
 <div>
 
-    <section class="relative bg-cover bg-center  h-96" style="background-image: url('{{ asset('storage/' . str_replace('\\', '/', $backgroundImage)) }}');">
+    <section class="relative z-30 bg-cover bg-center  h-96" style="background-image: url('{{ asset('storage/' . str_replace('\\', '/', $backgroundImage)) }}');">
         {{-- <div class="absolute inset-0 bg-green-700 bg-opacity-75"></div> --}}
         <div class="container mx-auto px-4 h-full flex items-center justify-center">
             <div class="relative text-center text-white">
