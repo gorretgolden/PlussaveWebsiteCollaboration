@@ -124,8 +124,6 @@
 
 
 
-
-
     <!--How we give loans-->
 
     <section class=" py-20 mt-10 secondary-bg">
