@@ -9,7 +9,9 @@ class BlogList extends Component
 {
     public function render()
     {
-        $blogs = Blog::latest()->get();
+
+        $blogs = Blog::latest()->paginate(6);
+
         return view('livewire.blog-list', compact('blogs'));
     }
 

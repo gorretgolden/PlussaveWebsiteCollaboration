@@ -31,7 +31,7 @@
                       </svg>
 
 
-                    <p class="text-base px-8">Email Address: esoptron@gmail.com</p>
+                    <p class="text-base px-8">Email Address: plussavefinancialltd@gmail.com</p>
 
                 </div>
                 <div class="flex justify-start py-4 px-6">
@@ -42,7 +42,7 @@
 
 
 
-                    <p class="text-base px-8">Location: Mperere</p>
+                    <p class="text-base px-8">Location: Saaza Plaza</p>
 
                 </div>
                 <div class="flex justify-start py-4 px-6">
@@ -53,7 +53,7 @@
 
 
 
-                    <p class="text-base px-8">Twitter: esoptron@salon</p>
+                    <p class="text-base px-8">Twitter: plussave</p>
 
                 </div>
                 <div class="flex justify-start py-4 px-6">
@@ -64,7 +64,7 @@
 
 
 
-                    <p class="text-base px-8">Instagram: esoptronsalon</p>
+                    <p class="text-base px-8">Instagram: plussave</p>
 
                 </div>
 

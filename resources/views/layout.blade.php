@@ -58,7 +58,7 @@ $partners = App\Models\Partner::all();
             <a href="{{ route('contact-us') }}"
                 class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-bold mb-2">Contact
                 Us</a>
-            <a href="{{ route('contact-us') }}"
+            <a href="{{ route('blog') }}"
                 class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-bold mb-2">Blog</a>
 
         </div>
@@ -142,9 +142,9 @@ $partners = App\Models\Partner::all();
         <div class="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Company Information -->
             <div>
-                <h2 class="text-xl font-bold mb-4">Esoptron Salon</h2>
-                <p class="mb-4">Mperere Kampala Uganda, 12345</p>
-                <p class="mb-4">Email: esoptronsalon@gmail.com</p>
+                <h2 class="text-xl font-bold mb-4">Plussave Financial Solutions</h2>
+                <p class="mb-4">Kampala Uganda, 12345</p>
+                <p class="mb-4">Email: plussavefinancialltd@gmail.com</p>
                 <p class="mb-4">Phone: (123) 456-7890</p>
             </div>
             <!-- Quick Links -->
@@ -190,7 +190,7 @@ $partners = App\Models\Partner::all();
             </div>
         </div>
         <div class="bg-gray-700 text-center py-4">
-            <p class="text-gray-400 text-sm">&copy; {{ date('Y') }} Esoptron Salon. All rights reserved.</p>
+            <p class="text-gray-400 text-sm">&copy; {{ date('Y') }} Plussave Financial Solutions. All rights reserved.</p>
         </div>
     </footer>
 

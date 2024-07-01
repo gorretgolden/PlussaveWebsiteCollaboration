@@ -1,4 +1,7 @@
+
 <div class="max-w-6xl mx-auto py-8 overflow-hidden">
+
+
     <div id="testimonial-carousel" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 transition-transform duration-1000">
         @if($clients && count($clients))
             @foreach($clients as $client)

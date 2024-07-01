@@ -30,7 +30,7 @@
         </div>
         <!-- Image Column -->
         <div class="flex items-center justify-center">
-            <img src="https://img.freepik.com/free-vector/bank-loan-concept-illustration_114360-17863.jpg?size=626&ext=jpg&ga=GA1.2.1085104606.1668665649&semt=ais" alt="Businesswoman" class="rounded-lg shadow-lg h-auto transform transition-all duration-500 hover:scale-105">
+            <img src="https://img.freepik.com/free-vector/bank-loan-concept-illustration_114360-17863.jpg?size=626&ext=jpg&ga=GA1.2.1085104606.1668665649&semt=ais" alt="Businesswoman" class="rounded-lg h-auto transform transition-all duration-500 ">
         </div>
     </div>
 </div>
