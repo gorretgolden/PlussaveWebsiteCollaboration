@@ -74,11 +74,13 @@ $partners = App\Models\Partner::all();
             <a href="{{ route('blog') }}"
                 class="block text-white rounded-md hover:border border-white px-3 py-2 text-base font-bold mb-2">Blog</a>
         </div>
-        <!-- Login button -->
-        <button
+        <!-- Loan button -->
+        {{-- <button
             class="bg-white text-green-700 font-semibold py-2 px-3 rounded hover:bg-white hover:text-green-600 hover:border-transparent hidden sm:block">
-            Apply for a Loan
-        </button>
+            Loan Calculator
+        </button> --}}
+        <a href="{{ route('loan-calculator') }}" class="bg-white text-green-700 font-semibold py-2 px-3 rounded hover:bg-white hover:text-green-600 hover:border-transparent hidden sm:block">Loan Calculator</a>
+
     </nav>
 
 

@@ -5,6 +5,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactUsPageController;
 use App\Http\Controllers\ServicesPageController;
 use App\Http\Controllers\FaqController;
+use App\Http\Controllers\LoanController;
 use App\Http\Controllers\SavingsController;
 use Illuminate\Support\Facades\Route;
 use TCG\Voyager\Facades\Voyager as FacadesVoyager;
@@ -31,6 +32,7 @@ Route::get('/contact_us',[ContactUsPageController::class,'index'])->name('contac
 Route::get('/faqs',[FaqController::class,'index'])->name('faqs');
 Route::get('/blog',[BlogController::class,'index'])->name('blog');
 Route::get('/services/savings',[SavingsController::class,'index'])->name('services.savings');
+Route::get('/services/loan-calculator',[LoanController::class,'index'])->name('loan-calculator');
 #Route::get('/blog',['blogPageController@index'])->name('services');
 
 Route::group(['prefix' => 'admin'], function () {
