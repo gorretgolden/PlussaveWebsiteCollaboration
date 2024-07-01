@@ -30,13 +30,12 @@ $partners = App\Models\Partner::all();
     @vite('resources/js/app.js') --}}
 
     <!--navbar-->
-    <nav class=" flex justify-between items-center p-4 bg-green-700">
+    <nav class="flex justify-between items-center p-4 bg-green-700">
         <div class="flex items-center">
             <!-- Logo -->
             <a href="/">
-                <img class=" h-16 w-auto mr-2" src="{{ asset('applogo.png') }}" alt="Your Company">
+                <img class="h-16 w-auto mr-2" src="{{ asset('applogo.png') }}" alt="Your Company">
             </a>
-            {{-- <a href="/"> <span class="text-white">Plussave</span></a> --}}
         </div>
         <!-- Mobile menu button -->
         <button type="button" class="text-gray-400 focus:outline-none sm:hidden" id="mobile-menu-button">
@@ -45,31 +44,43 @@ $partners = App\Models\Partner::all();
             </svg>
         </button>
         <!-- Responsive navigation links -->
-        <div class="hidden sm:flex space-x-4">
-
-            <a href="{{ route('services') }}"
-                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-bold mb-2">Our
-                Services</a>
-
+        <div class="hidden sm:flex space-x-4 relative">
+            <!-- Dropdown for Services -->
+            <div class="relative">
+                <button id="services-button"
+                    class="block text-white rounded-md hover:border border-white px-3 py-2 text-base font-bold mb-2 focus:outline-none">
+                    Our Services
+                </button>
+                <div id="services-dropdown"
+                    class="hidden absolute bg-white shadow-lg rounded-md mt-2 z-20 w-48">
+                    <a href="{{ route('services.savings') }}"
+                        class="block text-gray-800 px-4 py-2 hover:bg-gray-100">Savings</a>
+                    <a href="{{ route('services.savings') }}"
+                        class="block text-gray-800 px-4 py-2 hover:bg-gray-100">Loans</a>
+                    <a href="{{ route('services.savings') }}"
+                        class="block text-gray-800 px-4 py-2 hover:bg-gray-100">Financial Advice</a>
+                    <a href="{{ route('services.savings') }}"
+                        class="block text-gray-800 px-4 py-2 hover:bg-gray-100">Others</a>
+                </div>
+            </div>
             <a href="{{ route('about-us') }}"
-                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-bold mb-2">About
+                class="block text-white rounded-md hover:border border-white px-3 py-2 text-base font-bold mb-2">About
                 Us</a>
             <a href="{{ route('faqs') }}"
-                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-bold mb-2">FAQs</a>
+                class="block text-white rounded-md hover:border border-white px-3 py-2 text-base font-bold mb-2">FAQs</a>
             <a href="{{ route('contact-us') }}"
-                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-bold mb-2">Contact
+                class="block text-white rounded-md hover:border border-white px-3 py-2 text-base font-bold mb-2">Contact
                 Us</a>
             <a href="{{ route('blog') }}"
-                class="block text-white  rounded-md hover:border border-white px-3 py-2 text-base font-bold mb-2">Blog</a>
-
+                class="block text-white rounded-md hover:border border-white px-3 py-2 text-base font-bold mb-2">Blog</a>
         </div>
         <!-- Login button -->
         <button
             class="bg-white text-green-700 font-semibold py-2 px-3 rounded hover:bg-white hover:text-green-600 hover:border-transparent hidden sm:block">
             Apply for a Loan
         </button>
-
     </nav>
+
 
 
     <!-- Mobile menu -->
@@ -197,6 +208,31 @@ $partners = App\Models\Partner::all();
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
+        document.getElementById('services-button').addEventListener('click', function () {
+            const dropdown = document.getElementById('services-dropdown');
+            dropdown.classList.toggle('hidden');
+        });
+
+        // Close the dropdown if clicked outside
+        document.addEventListener('click', function (event) {
+            const dropdown = document.getElementById('services-dropdown');
+            const button = document.getElementById('services-button');
+
+            if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+                dropdown.classList.add('hidden');
+            }
+        });
+
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            const menu = document.querySelector('.sm\\:flex');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+
+
+
+    <script>
        var swiper = new Swiper('.swiper-container', {
             slidesPerView: 5,
             spaceBetween: 30,
@@ -242,6 +278,8 @@ $partners = App\Models\Partner::all();
 
 
     </script>
+
+
 
 
 

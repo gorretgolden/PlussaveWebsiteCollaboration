@@ -4,7 +4,7 @@
 
     <div class="grid grid-cols-1 md:grid-cols-4 gap-6 py-4">
         @foreach($serviceTypes as $serviceType)
-        <a href="{{ url('/' . $serviceType->route) }}">
+        <a href="{{ url('/services/' . $serviceType->route) }}">
             <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:border border-green-700 transition duration-300">
                 <img class="w-full h-48 object-cover" src="{{ asset('storage/' . str_replace('\\', '/', $serviceType->image)) }}" alt="Card Image">
                 <div class="p-6">

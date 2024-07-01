@@ -30,7 +30,7 @@ Route::get('/about_us',[AboutUsPageController::class,'index'])->name('about-us')
 Route::get('/contact_us',[ContactUsPageController::class,'index'])->name('contact-us');
 Route::get('/faqs',[FaqController::class,'index'])->name('faqs');
 Route::get('/blog',[BlogController::class,'index'])->name('blog');
-Route::get('/savings',[SavingsController::class,'index'])->name('savings');
+Route::get('/services/savings',[SavingsController::class,'index'])->name('services.savings');
 #Route::get('/blog',['blogPageController@index'])->name('services');
 
 Route::group(['prefix' => 'admin'], function () {
