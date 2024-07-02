@@ -6,6 +6,7 @@ use App\Http\Controllers\ContactUsPageController;
 use App\Http\Controllers\ServicesPageController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\LoanController;
+use App\Http\Controllers\MemberController;
 use App\Http\Controllers\SavingsController;
 use Illuminate\Support\Facades\Route;
 use TCG\Voyager\Facades\Voyager as FacadesVoyager;
@@ -26,6 +27,8 @@ use TCG\Voyager\Facades\Voyager as FacadesVoyager;
 Route::get('/', function () {
     return view('pages.home');
 });
+
+Route::get('members/new-account',[MemberController::class,'index'])->name('new-member');
 Route::get('/services',[ServicesPageController::class])->name('services');
 Route::get('/about_us',[AboutUsPageController::class,'index'])->name('about-us');
 Route::get('/contact_us',[ContactUsPageController::class,'index'])->name('contact-us');
@@ -33,7 +36,8 @@ Route::get('/faqs',[FaqController::class,'index'])->name('faqs');
 Route::get('/blog',[BlogController::class,'index'])->name('blog');
 Route::get('/services/savings',[SavingsController::class,'index'])->name('services.savings');
 Route::get('/services/loan-calculator',[LoanController::class,'index'])->name('loan-calculator');
-#Route::get('/blog',['blogPageController@index'])->name('services');
+
+
 
 Route::group(['prefix' => 'admin'], function () {
     FacadesVoyager::routes();

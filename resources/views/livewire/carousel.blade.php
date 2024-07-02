@@ -5,7 +5,7 @@
                 <div class="absolute inset-0  flex flex-col items-center justify-center text-center p-4">
                     <h1 class="carousel-title text-2xl md:text-4xl font-bold mb-2 text-white transition-opacity duration-1000 ease-in-out opacity-0" data-title="{{ $image->title }}"></h1>
                     <p class="text-sm md:text-lg text-white mb-4 p-2">{{ $image->description }}</p>
-                    <button class="bg-green-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-green-700 transition-colors duration-300">Become a member</button>
+                    <a  href="{{route('new-member')}}" class="bg-green-600 text-white px-4 py-2 rounded-full shadow-md hover:bg-green-700 transition-colors duration-300">Become a member</a>
                 </div>
             </div>
         @endforeach
