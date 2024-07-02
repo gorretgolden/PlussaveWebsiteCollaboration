@@ -17,6 +17,9 @@ class LoanApplicationForm extends Component
     public $businessNature;
     public $residence;
 
+    public $isSubmitting = false;
+
+
     protected $rules = [
         'loanAmount' => 'required|numeric|min:0',
         'name' => 'required|string|max:255',
@@ -29,9 +32,19 @@ class LoanApplicationForm extends Component
         'residence' => 'required|string|max:255',
     ];
 
+    public function updated($propertyName)
+    {
+        $this->validateOnly($propertyName);
+    }
+
     public function submit()
     {
         $this->validate();
+
+        $this->isSubmitting = true;
+
+        sleep(10);
+
 
         LoanApplication::create([
             'loan_amount' => $this->loanAmount,
@@ -48,6 +61,8 @@ class LoanApplicationForm extends Component
         session()->flash('message', 'Your loan application has been submitted successfully!');
 
         $this->reset(['loanAmount', 'name', 'email', 'phone', 'loanType', 'businessLocation', 'loanPurpose', 'businessNature', 'residence']);
+        $this->isSubmitting = false;
+
     }
 
     public function render()

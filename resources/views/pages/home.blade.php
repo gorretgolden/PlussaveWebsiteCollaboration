@@ -125,7 +125,7 @@
 
 
     <!--How we give loans-->
-
+{{--
     <section class=" py-20 mt-10 secondary-bg">
         <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">How We Give Loans</h2>
 
@@ -195,17 +195,15 @@
         </div>
 
 
-    </section>
+    </section> --}}
 
 
-    <div class="content-wrapper">
-
-
-
+    <div class="secondary-bg">
 
         <!-- Apply for Loan Section -->
         <section class="py-16">
             <div class="container mx-auto">
+
 
                 @livewire('loan-application-form')
             </div>
@@ -213,7 +211,7 @@
 
 
         <!-- Testimonial Section -->
-        <section class="secondary-bg py-16">
+        {{-- <section class="secondary-bg py-16">
             <div class="container mx-auto">
                 <h2 class="text-3xl font-bold text-center mb-8">What Our Customers Say</h2>
                 <!-- Testimonial Client Component -->
@@ -221,7 +219,7 @@
 
 
             </div>
-        </section>
+        </section> --}}
 
 
 

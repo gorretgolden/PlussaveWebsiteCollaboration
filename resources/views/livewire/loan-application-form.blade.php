@@ -1,119 +1,120 @@
 <div>
-    <!-- loan-application.blade.php -->
-    <div class="flex items-center justify-center min-h-screen bg-gray-100">
-        <div class="w-full lg:w-4/5 xl:w-2/3  p-4">
-            <div class="bg-white rounded-lg shadow-lg p-8 transform transition-transform duration-500">
-                <h2 class="text-2xl font-bold text-center mb-4">Loan Application Form</h2>
+    <h2 class="text-2xl font-bold mb-4 text-center">Loan Application Form</h2>
 
-                @if (session()->has('message'))
-                    <div class="mb-4 text-green-700 text-center font-bold">
-                        {{ session('message') }}
-                    </div>
-                @endif
-                <form wire:submit.prevent="submit" class="bg-white shadow-md rounded-lg p-6 mx-auto max-w-lg">
 
-                    <div class="mb-4">
-                        <label for="account_type" class="block text-green-800 mb-2">Account Type</label>
-                        <select id="account_type" wire:model="account_type" class="form-select mt-1 block w-full px-4 py-2 border rounded-md focus:outline-none focus:border-green-700">
-                            <option value="">Select Account Type</option>
-                            <option value="Current Savings Account">Current Savings Account</option>
-                            <option value="Fixed Account">Fixed Account</option>
-                            <option value="Toto Account">Toto Account</option>
-                            <option value="Joint Account">Joint Account</option>
-                            <option value="Group Account">Group Account</option>
-                        </select>
-                    </div>
+<div class="max-w-4xl mx-auto flex items-center justify-center mt-8">
 
-                    <div class="mb-4">
-                        <label for="title" class="block text-green-800 mb-2">Title</label>
-                        <select id="title" wire:model="title" class="form-select mt-1 block w-full px-4 py-2 border rounded-md focus:outline-none focus:border-green-700">
-                            <option value="Mr">Mr</option>
-                            <option value="Mrs">Mrs</option>
-                            <option value="Miss">Miss</option>
-                            <!-- Add more options as needed -->
-                        </select>
-                    </div>
+    <div class=" md:block md:w-1/3 lg:w-1/2">
+        <img src="https://img.freepik.com/free-vector/manage-money-concept-illustration_114360-8079.jpg?t=st=1719949535~exp=1719953135~hmac=d2183baaf59ee521bd52c8ed271109d25b45888ac22a02d10de5a194583d16e6&w=1380" alt="Image" class="w-full h-auto">
+    </div>
+    <div class="w-full md:w-2/3 lg:w-1/2 px-4">
+        <div class="bg-white shadow-md rounded px-8 py-6  mb-4">
+            @if (session()->has('message'))
+                <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4" role="alert">
+                    <span class="block sm:inline">{{ session('message') }}</span>
+                </div>
+            @endif
 
-                    <div class="mb-4">
-                        <label for="firstName" class="block text-green-800 mb-2">First Name</label>
-                        <input id="firstName" type="text" wire:model="firstName" class="form-input mt-1 block w-full px-4 py-2 border rounded-md focus:outline-none focus:border-green-700">
-                    </div>
 
-                    <div class="mb-4">
-                        <label for="lastName" class="block text-green-800 mb-2">Last Name</label>
-                        <input id="lastName" type="text" wire:model="lastName" class="form-input mt-1 block w-full px-4 py-2 border rounded-md focus:outline-none focus:border-green-700">
-                    </div>
+            <form wire:submit.prevent="submit">
 
-                    <div class="mb-4">
-                        <label for="otherName" class="block text-green-800 mb-2">Other Name</label>
-                        <input id="otherName" type="text" wire:model="otherName" class="form-input mt-1 block w-full px-4 py-2 border rounded-md focus:outline-none focus:border-green-700">
-                    </div>
 
-                    <div class="mb-4">
-                        <label for="physicalAddress" class="block text-green-800 mb-2">Physical Address</label>
-                        <textarea id="physicalAddress" wire:model="physicalAddress" class="form-textarea mt-1 block w-full px-4 py-2 border rounded-md focus:outline-none focus:border-green-700"></textarea>
-                    </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="loanAmount">
+                        Loan Amount
+                    </label>
+                    <input wire:model="loanAmount" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="loanAmount" type="text" placeholder="Loan Amount">
+                    @error('loanAmount') <p class="text-red-500 text-xs ">{{ $message }}</p> @enderror
+                </div>
 
-                    <div class="mb-4">
-                        <label for="gender" class="block text-green-800 mb-2">Gender</label>
-                        <select id="gender" wire:model="gender" class="form-select mt-1 block w-full px-4 py-2 border rounded-md focus:outline-none focus:border-green-700">
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                        </select>
-                    </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                        Name
+                    </label>
+                    <input wire:model="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your Name">
+                    @error('name') <p class="text-red-500 text-xs ">{{ $message }}</p> @enderror
+                </div>
 
-                    <div class="mb-4">
-                        <label for="mobileNumber" class="block text-green-800 mb-2">Mobile Number</label>
-                        <input id="mobileNumber" type="text" wire:model="mobileNumber" class="form-input mt-1 block w-full px-4 py-2 border rounded-md focus:outline-none focus:border-green-700">
-                    </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                        Email
+                    </label>
+                    <input wire:model="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email Address">
+                    @error('email') <p class="text-red-500 text-xs ">{{ $message }}</p> @enderror
+                </div>
 
-                    <div class="mb-4">
-                        <label for="otherMobileNumber" class="block text-green-800 mb-2">Other Mobile Number</label>
-                        <input id="otherMobileNumber" type="text" wire:model="otherMobileNumber" class="form-input mt-1 block w-full px-4 py-2 border rounded-md focus:outline-none focus:border-green-700">
-                    </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="phone">
+                        Phone
+                    </label>
+                    <input wire:model="phone" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="text" placeholder="Phone Number">
+                    @error('phone') <p class="text-red-500 text-xs ">{{ $message }}</p> @enderror
+                </div>
 
-                    <div class="mb-4">
-                        <label for="dateOfBirth" class="block text-green-800 mb-2">Date of Birth</label>
-                        <input id="dateOfBirth" type="date" wire:model="dateOfBirth" class="form-input mt-1 block w-full px-4 py-2 border rounded-md focus:outline-none focus:border-green-700">
-                    </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="loanType">
+                        Loan Type
+                    </label>
+                    <select wire:model="loanType" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="loanType">
+                        <option value="">Select Loan Type</option>
+                        <option value="Business Loans">Business Loans</option>
+                        <option value="Personal Loans">Personal Loans</option>
+                        <option value="School Loans">School Loans</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    @error('loanType') <p class="text-red-500 text-xs ">{{ $message }}</p> @enderror
+                </div>
 
-                    <div class="mb-4">
-                        <label for="placeOfBirth" class="block text-green-800 mb-2">Place of Birth</label>
-                        <input id="placeOfBirth" type="text" wire:model="placeOfBirth" class="form-input mt-1 block w-full px-4 py-2 border rounded-md focus:outline-none focus:border-green-700">
-                    </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="businessLocation">
+                        Business Location
+                    </label>
+                    <input wire:model="businessLocation" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="businessLocation" type="text" placeholder="Business Location">
+                    @error('businessLocation') <p class="text-red-500 text-xs ">{{ $message }}</p> @enderror
+                </div>
 
-                    <div class="mb-4">
-                        <label for="email" class="block text-green-800 mb-2">E-mail Address</label>
-                        <input id="email" type="email" wire:model="email" class="form-input mt-1 block w-full px-4 py-2 border rounded-md focus:outline-none focus:border-green-700">
-                    </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="loanPurpose">
+                        Loan Purpose
+                    </label>
+                    <input wire:model="loanPurpose" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="loanPurpose" type="text" placeholder="Loan Purpose">
+                    @error('loanPurpose') <p class="text-red-500 text-xs ">{{ $message }}</p> @enderror
+                </div>
 
-                    <div class="mb-4">
-                        <label for="identificationType" class="block text-green-800 mb-2">Identification Type</label>
-                        <select id="identificationType" wire:model="identificationType" class="form-select mt-1 block w-full px-4 py-2 border rounded-md focus:outline-none focus:border-green-700">
-                            <option value="">Select Identification Type</option>
-                            <option value="NID">National ID (NID)</option>
-                            <option value="Passport">Passport</option>
-                            <option value="DrivingPermit">Driving Permit</option>
-                        </select>
-                    </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="businessNature">
+                        Business Nature
+                    </label>
+                    <input wire:model="businessNature" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="businessNature" type="text" placeholder="Business Nature">
+                    @error('businessNature') <p class="text-red-500 text-xs ">{{ $message }}</p> @enderror
+                </div>
 
-                    <div class="mb-4">
-                        <label for="identificationNumber" class="block text-green-800 mb-2">Identification Number</label>
-                        <input id="identificationNumber" type="text" wire:model="identificationNumber" class="form-input mt-1 block w-full px-4 py-2 border rounded-md focus:outline-none focus:border-green-700">
-                    </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="residence">
+                        Residence
+                    </label>
+                    <input wire:model="residence" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="residence" type="text" placeholder="Residence">
+                    @error('residence') <p class="text-red-500 text-xs ">{{ $message }}</p> @enderror
+                </div>
 
-                    <div class="mb-4">
-                        <label for="occupation" class="block text-green-800 mb-2">Occupation</label>
-                        <input id="occupation" type="text" wire:model="occupation" class="form-input mt-1 block w-full px-4 py-2 border rounded-md focus:outline-none focus:border-green-700">
-                    </div>
-
-                    <div class="flex justify-center">
-                        <button type="submit" class="bg-green-700 text-white py-2 px-6 rounded-lg hover:bg-green-800 transition duration-300">Submit Application</button>
-                    </div>
-
-                </form>
-
-            </div>
+                <div class="flex items-center justify-center">
+                    <button type="submit" wire:loading.attr="disabled" class="bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full relative">
+                        <span wire:loading wire:target="submit">
+                            <svg class="animate-spin h-5 w-5 mr-3 absolute left-0 inset-y-0 m-auto pl-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V2.5a.5.5 0 011 0V4a8 8 0 01-8 8z"></path>
+                            </svg>
+                            Submitting...
+                        </span>
+                        <span wire:loading.remove>Submit</span>
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
+
+
 </div>
+
+</div>
+
