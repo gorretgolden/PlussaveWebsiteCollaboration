@@ -10,7 +10,7 @@
     <div class="w-full md:w-2/3 lg:w-1/2 px-4">
         <div class="bg-white shadow-md rounded px-8 py-6  mb-4">
             @if (session()->has('message'))
-                <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4" role="alert">
+                <div class="bg-green-100 border border-green-600 text-green-700 px-4 py-3 rounded relative mb-4" role="alert">
                     <span class="block sm:inline">{{ session('message') }}</span>
                 </div>
             @endif
@@ -23,7 +23,7 @@
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="loanAmount">
                         Loan Amount
                     </label>
-                    <input wire:model="loanAmount" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="loanAmount" type="text" placeholder="Loan Amount">
+                    <input   min="10000" type="number" wire:model="loanAmount" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="loanAmount" type="text" placeholder="Loan Amount">
                     @error('loanAmount') <p class="text-red-500 text-xs ">{{ $message }}</p> @enderror
                 </div>
 
@@ -80,21 +80,26 @@
                     <input wire:model="loanPurpose" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="loanPurpose" type="text" placeholder="Loan Purpose">
                     @error('loanPurpose') <p class="text-red-500 text-xs ">{{ $message }}</p> @enderror
                 </div>
-
-                <div class="mb-4">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="businessNature">
-                        Business Nature
-                    </label>
-                    <input wire:model="businessNature" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="businessNature" type="text" placeholder="Business Nature">
-                    @error('businessNature') <p class="text-red-500 text-xs ">{{ $message }}</p> @enderror
-                </div>
-
                 <div class="mb-4">
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="residence">
                         Residence
                     </label>
                     <input wire:model="residence" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="residence" type="text" placeholder="Residence">
                     @error('residence') <p class="text-red-500 text-xs ">{{ $message }}</p> @enderror
+                </div>
+
+
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="businessNature">
+                        Business Nature
+                    </label>
+                    <select wire:model.lazy="businessNature" id="businessNature" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-green-500">
+                        <option value="">Select Business Nature</option>
+                        @foreach ($businessCategories as $category)
+                            <option value="{{ $category }}">{{ $category }}</option>
+                        @endforeach
+                    </select>
+                    @error('businessNature') <p class="text-red-500 text-xs ">{{ $message }}</p> @enderror
                 </div>
 
                 <div class="flex items-center justify-center">
@@ -118,3 +123,11 @@
 
 </div>
 
+<script>
+    $(document).ready(function() {
+        $('#businessNature').select2({
+            placeholder: "Select Business Nature",
+            allowClear: true
+        });
+    });
+</script>

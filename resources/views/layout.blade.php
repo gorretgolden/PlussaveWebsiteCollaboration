@@ -21,6 +21,9 @@ $partners = App\Models\Partner::all();
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <!-- Add jQuery and Select2 CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     @livewireStyles
 
 </head>
@@ -207,6 +210,11 @@ $partners = App\Models\Partner::all();
             <p class="text-gray-400 text-sm">&copy; {{ date('Y') }} Plussave Financial Solutions. All rights reserved.</p>
         </div>
     </footer>
+
+
+    <!-- Select2 initialization script -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <script>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>

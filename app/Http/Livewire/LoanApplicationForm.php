@@ -19,6 +19,31 @@ class LoanApplicationForm extends Component
 
     public $isSubmitting = false;
 
+       // List of business categories
+       public $businessCategories = [
+        'Retail',
+        'Services',
+        'Manufacturing',
+        'Technology',
+        'Healthcare',
+        'Education',
+        'Food & Beverage',
+        'Finance',
+        'Real Estate',
+        'Construction',
+        'Art & Entertainment',
+        'Automotive',
+        'Legal Services',
+        'Travel & Tourism',
+        'Media & Communication',
+        'Retail',
+        'Services',
+        'Manufacturing',
+        'Technology',
+        'Healthcare',
+
+    ];
+
 
     protected $rules = [
         'loanAmount' => 'required|numeric|min:0',
@@ -28,7 +53,7 @@ class LoanApplicationForm extends Component
         'loanType' => 'required|string',
         'businessLocation' => 'required|string|max:255',
         'loanPurpose' => 'required|string|max:255',
-        'businessNature' => 'required|string',
+        'businessNature' => 'required|string|in:Retail,Services,Manufacturing,Technology,Healthcare,Education,Food & Beverage,Finance,Real Estate,Construction,Art & Entertainment,Automotive,Legal Services,Travel & Tourism,Media & Communication',
         'residence' => 'required|string|max:255',
     ];
 
