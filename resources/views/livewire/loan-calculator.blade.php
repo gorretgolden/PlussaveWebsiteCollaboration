@@ -2,7 +2,7 @@
 >
 <!-- loan-calculator.blade.php -->
 
-<div class="flex justify-center items-center min-h-screen bg-gray-100">
+<div class="flex justify-center items-center min-h-screen ">
     <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-lg">
         <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Loan Calculator</h2>
 

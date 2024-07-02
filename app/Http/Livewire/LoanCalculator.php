@@ -20,6 +20,11 @@ class LoanCalculator extends Component
         'amortizationPeriod' => 'required|numeric|min:1',
     ];
 
+    public function updated($propertyName)
+    {
+        $this->validateOnly($propertyName);
+    }
+
     public function calculateLoan()
     {
         $validatedData = $this->validate($this->rules);
