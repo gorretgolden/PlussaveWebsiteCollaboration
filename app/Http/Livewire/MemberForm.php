@@ -15,21 +15,23 @@ class MemberForm extends Component
     // Step 2: Account Details
     public $accountType, $identificationType, $identificationNumber, $occupation;
 
-    protected $rules = ['title' => 'required|string',
-            'firstName' => 'required|string|max:255',
-            'lastName' => 'required|string|max:255',
-            'otherName' => 'nullable|string|max:255',
-            'physicalAddress' => 'required|string|max:500',
-            'gender' => 'required|in:Male,Female',
-            'mobileNumber' => 'required|regex:/^\+?[1-9]\d{1,14}$/',
-            'otherMobileNumber' => 'nullable|regex:/^\+?[1-9]\d{1,14}$/',
-            'dateOfBirth' => 'required|date',
-            'placeOfWork' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'accountType' => 'required|string',
-            'identificationType' => 'required|string',
-            'identificationNumber' => 'required|string|max:255',
-            'occupation' => 'required|string|max:255',];
+    protected $rules = [
+        'title' => 'required|string',
+        'firstName' => 'required|string|max:255',
+        'lastName' => 'required|string|max:255',
+        'otherName' => 'nullable|string|max:255',
+        'physicalAddress' => 'required|string|max:500',
+        'gender' => 'required|in:Male,Female',
+        'mobileNumber' => 'required|regex:/^07\d{8,9}$/',
+        'otherMobileNumber' => 'nullable|regex:/^07\d{8,9}$/',
+        'dateOfBirth' => 'required|date',
+        'placeOfWork' => 'required|string|max:255',
+        'email' => 'required|email|max:255',
+        'accountType' => 'required|string',
+        'identificationType' => 'required|string',
+        'identificationNumber' => 'required|string|max:255',
+        'occupation' => 'required|string|max:255',
+    ];
 
     public function mount()
     {
@@ -40,8 +42,8 @@ class MemberForm extends Component
             'otherName' => 'nullable|string|max:255',
             'physicalAddress' => 'required|string|max:500',
             'gender' => 'required|in:Male,Female',
-            'mobileNumber' => 'required|regex:/^\+?[1-9]\d{1,14}$/',
-            'otherMobileNumber' => 'nullable|regex:/^\+?[1-9]\d{1,14}$/',
+            'mobileNumber' => 'required|regex:/^07\d{8,9}$/',
+            'otherMobileNumber' => 'nullable|regex:/^07\d{8,9}$/',
             'dateOfBirth' => 'required|date',
             'placeOfWork' => 'required|string|max:255',
             'email' => 'required|email|max:255',
@@ -52,17 +54,22 @@ class MemberForm extends Component
         ];
     }
 
+
     public function updated($propertyName)
     {
-        $this->validateOnly($propertyName, $this->rules);
+        $this->validateOnly($propertyName);
     }
+
 
     public function nextStep()
     {
         $this->validate($this->rules);
 
         $this->step++;
+        dump($this->step,'Here');
     }
+
+
 
     public function previousStep()
     {
@@ -101,7 +108,7 @@ class MemberForm extends Component
                 // Add other fields as needed
             ]);
 
-            session()->flash('message', 'Dear '.$this->title.' '.$this->last_name.' '.$this->first_name.' your application has been submitted successfully!');
+            session()->flash('message', 'Dear ' . $this->title . ' ' . $this->last_name . ' ' . $this->first_name . ' your application has been submitted successfully!');
 
             $this->reset([
                 'title',
