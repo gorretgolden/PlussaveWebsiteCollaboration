@@ -16,6 +16,7 @@ class LoanApplicationForm extends Component
     public $loanPurpose;
     public $businessNature;
     public $residence;
+    public $status;
 
     public $isSubmitting = false;
 
@@ -81,6 +82,7 @@ class LoanApplicationForm extends Component
             'loan_purpose' => $this->loanPurpose,
             'business_nature' => $this->businessNature,
             'residence' => $this->residence,
+            'status' =>'pending'
         ]);
 
         session()->flash('message', 'Your loan application has been submitted successfully!');

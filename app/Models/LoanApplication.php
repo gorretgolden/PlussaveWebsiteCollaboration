@@ -19,5 +19,6 @@ class LoanApplication extends Model
         'loan_purpose',
         'business_nature',
         'residence',
+        'status'
     ];
 }
