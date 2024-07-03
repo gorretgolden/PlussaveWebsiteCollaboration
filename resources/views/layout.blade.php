@@ -133,10 +133,17 @@ $partners = App\Models\Partner::all();
 
     <!-- Subscription Section -->
 
-    <section class="bg-salon bg-cover bg-center relative py-20"
-        style="background-image: url('https://img.freepik.com/free-photo/green-grass-wallpaper-fresh-green-grass-wallpapers-wallpaper-cave_1340-42685.jpg?t=st=1717916782~exp=1717920382~hmac=b300557944f89b027e2b2b64e2a66d174cb5156ef1c939c3791ec6a18961eaee&w=1800') ">
+    <section class="relative py-20">
+        <!-- Video Background -->
+        <video autoplay muted loop class="absolute inset-0 object-cover w-full h-full">
+            <source src="https://videocdn.cdnpk.net/videos/f1ddff26-758e-4e4a-b22d-7385aed047ce/horizontal/previews/clear/large.mp4?token=exp=1720005240~hmac=4d40813affa363c80756f54d5ca3c06403ebb4803c7dfedf530ad88b48d02691" type="video/mp4">
+            <!-- Add more <source> elements for different video formats if needed -->
+            Your browser does not support the video tag.
+        </video>
+
         <!-- Background Overlay -->
         <div class="absolute inset-0 bg-black opacity-50"></div>
+
         <div class="container mx-auto relative z-10 px-4">
             <div class="max-w-lg mx-auto bg-white rounded-lg shadow-lg p-8">
                 <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Subscribe to Our Newsletter</h2>
@@ -145,6 +152,7 @@ $partners = App\Models\Partner::all();
             </div>
         </div>
     </section>
+
 
     <!-- Footer Section -->
     <footer class="bg-black text-white mt-auto">
