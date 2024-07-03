@@ -123,11 +123,11 @@
 
 </div>
 
-<script>
+{{-- <script>
     $(document).ready(function() {
         $('#businessNature').select2({
             placeholder: "Select Business Nature",
             allowClear: true
         });
     });
-</script>
+</script> --}}

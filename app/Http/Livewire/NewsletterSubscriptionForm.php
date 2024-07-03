@@ -9,6 +9,8 @@ class NewsletterSubscriptionForm extends Component
 {
 
     public $email;
+    public $loading = false;
+
 
     protected $rules = [
         'email' => 'required|email|unique:subscribers,email',
@@ -24,12 +26,19 @@ class NewsletterSubscriptionForm extends Component
     {
         $this->validate();
 
+        $this->loading = true;
+
+        // Simulate subscription process (replace with actual logic)
+        sleep(2); // Example delay
+
         Subscriber::create([
             'email' => $this->email,
+            'subscribed_at' => now(),
         ]);
 
         session()->flash('success', 'You have subscribed successfully!');
-        $this->reset('email');
+
+        $this->reset(['email', 'loading']);
     }
 
     public function render()
