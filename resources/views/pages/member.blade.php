@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- Hero Section -->
- <livewire:hero-section type="blog" />
+ <livewire:hero-section type="new-member" />
 
 
 
