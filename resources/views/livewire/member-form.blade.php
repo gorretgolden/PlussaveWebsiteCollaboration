@@ -1,7 +1,7 @@
 <div class="max-w-4xl mx-auto py-8">
     @if (session()->has('success'))
         <div
-            class="bg-green-100 border-l-4 border-green-500 text-green-900 p-4 mb-4 shadow-md mx-auto max-w-sm rounded-md relative">
+            class="bg-green-100 border-l-4 border-green-500 text-green-900 p-4 mb-4 shadow-md mx-auto max-w-lg rounded-md relative">
             <div class="flex items-center justify-between">
                 <div class="flex items-center">
                     <div class="text-lg font-semibold mr-3">
@@ -54,6 +54,21 @@
 
 
                 <!-- Personal Information Fields -->
+
+                <!-- Title Field -->
+                <div class="mb-4">
+                    <label for="title" class="block mb-2">Title</label>
+                    <select wire:model="title" id="title"
+                        class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-green-700">
+                        <option value="">Select Title</option>
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Miss">Miss</option>
+                    </select>
+                    @error('title')
+                        <span class="text-red-500 text-sm">{{ $message }}</span>
+                    @enderror
+                </div>
                 <div class="mb-4">
                     <label for="firstName" class="block mb-2">First Name</label>
                     <input wire:model="firstName" type="text" id="firstName"
@@ -169,9 +184,7 @@
 
 
                 <div class="flex justify-between">
-                    <button type="button"
-                        class="bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600 transition duration-300"
-                        disabled>Previous</button>
+                    <div></div>
                     <button type="button" wire:click="nextStep"
                         class="bg-green-700 text-white py-2 px-4 rounded-lg hover:bg-green-800 transition duration-300">Next</button>
                 </div>

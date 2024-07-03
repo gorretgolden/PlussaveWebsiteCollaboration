@@ -16,67 +16,47 @@ class MemberForm extends Component
     public $accountType, $identificationType, $identificationNumber, $occupation;
 
     protected $rules = [
-        'title' => 'required|string',
+        1 => [
+          'title' => 'required|string',
         'firstName' => 'required|string|max:255',
         'lastName' => 'required|string|max:255',
         'otherName' => 'nullable|string|max:255',
         'physicalAddress' => 'required|string|max:500',
         'gender' => 'required|in:Male,Female',
-        'mobileNumber' => 'required|regex:/^07\d{8,9}$/',
+        'mobileNumber' => 'required|regex:/^07\d{8,9}$/|unique:members,mobile_number',
         'otherMobileNumber' => 'nullable|regex:/^07\d{8,9}$/',
         'dateOfBirth' => 'required|date',
         'placeOfWork' => 'required|string|max:255',
-        'email' => 'required|email|max:255',
-        'accountType' => 'required|string',
-        'identificationType' => 'required|string',
-        'identificationNumber' => 'required|string|max:255',
-        'occupation' => 'required|string|max:255',
-    ];
-
-    public function mount()
-    {
-        $this->rules = [
-            'title' => 'required|string',
-            'firstName' => 'required|string|max:255',
-            'lastName' => 'required|string|max:255',
-            'otherName' => 'nullable|string|max:255',
-            'physicalAddress' => 'required|string|max:500',
-            'gender' => 'required|in:Male,Female',
-            'mobileNumber' => 'required|regex:/^07\d{8,9}$/',
-            'otherMobileNumber' => 'nullable|regex:/^07\d{8,9}$/',
-            'dateOfBirth' => 'required|date',
-            'placeOfWork' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
+        'email' => 'required|email|max:255|unique:members,email',
+        ],
+        2 => [
             'accountType' => 'required|string',
             'identificationType' => 'required|string',
             'identificationNumber' => 'required|string|max:255',
             'occupation' => 'required|string|max:255',
-        ];
-    }
-
+        ],
+    ];
 
     public function updated($propertyName)
     {
-        $this->validateOnly($propertyName);
+        $this->validateOnly($propertyName, $this->rules[$this->step]);
     }
-
 
     public function nextStep()
     {
-        $this->validate($this->rules);
+        $this->validate($this->rules[$this->step]);
 
-        $this->step++;
-        dump($this->step,'Here');
+        if ($this->step < 2) {
+            $this->step++;
+        }
     }
-
-
 
     public function previousStep()
     {
-        $this->step--;
+        if ($this->step > 1) {
+            $this->step--;
+        }
     }
-
-
 
     public function render()
     {
@@ -85,12 +65,12 @@ class MemberForm extends Component
 
     public function submit()
     {
-
-        $this->validate($this->rules);
+        $this->validate($this->rules[$this->step]);
 
         try {
             // Create a new member record
             Member::create([
+                'title' => $this->title,
                 'first_name' => $this->firstName,
                 'last_name' => $this->lastName,
                 'other_name' => $this->otherName,
@@ -105,10 +85,9 @@ class MemberForm extends Component
                 'identification_type' => $this->identificationType,
                 'identification_number' => $this->identificationNumber,
                 'occupation' => $this->occupation,
-                // Add other fields as needed
             ]);
 
-            session()->flash('message', 'Dear ' . $this->title . ' ' . $this->last_name . ' ' . $this->first_name . ' your application has been submitted successfully!');
+            session()->flash('success', 'Dear ' . $this->title . ' ' . $this->lastName . ' '.$this->firstName.' your application has been submitted successfully!');
 
             $this->reset([
                 'title',
@@ -128,21 +107,16 @@ class MemberForm extends Component
                 'occupation'
             ]);
 
-
             $this->step = 1;
 
-            return redirect()->to('/');
 
         } catch (\Exception $e) {
+            // dump($e);
             session()->flash('error', 'Failed to register member. Please try again.');
         }
-
-
-
-
-
-
     }
+
+
 }
 
 

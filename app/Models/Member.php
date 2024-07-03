@@ -19,11 +19,11 @@ class Member extends Model
         'mobile_number',
         'other_mobile_number',
         'date_of_birth',
-        'place_of_birth',
+        'place_of_work',
         'email',
         'identification_type',
         'identification_number',
         'occupation',
-        'account_type', // Include account type
+        'account_type',
     ];
 }
