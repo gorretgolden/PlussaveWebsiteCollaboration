@@ -21,9 +21,9 @@ $partners = App\Models\Partner::all();
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-     <!-- Add jQuery and Select2 CSS -->
-     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
-     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <!-- Add jQuery and Select2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     @livewireStyles
 
 </head>
@@ -54,8 +54,7 @@ $partners = App\Models\Partner::all();
                     class="block text-white rounded-md hover:border border-white px-3 py-2 text-base font-bold mb-2 focus:outline-none">
                     Our Services
                 </button>
-                <div id="services-dropdown"
-                    class="hidden absolute bg-white shadow-lg rounded-md mt-2 z-50 w-40">
+                <div id="services-dropdown" class="hidden absolute bg-white shadow-lg rounded-md mt-2 z-50 w-40">
                     <a href="{{ route('services.savings') }}"
                         class="block text-gray-800 px-4 py-2 hover:bg-gray-100">Savings</a>
                     <a href="{{ route('services.savings') }}"
@@ -82,7 +81,9 @@ $partners = App\Models\Partner::all();
             class="bg-white text-green-700 font-semibold py-2 px-3 rounded hover:bg-white hover:text-green-600 hover:border-transparent hidden sm:block">
             Loan Calculator
         </button> --}}
-        <a href="{{ route('loan-calculator') }}" class="bg-white text-green-700 font-semibold py-2 px-3 rounded hover:bg-white hover:text-green-600 hover:border-transparent hidden sm:block">Loan Calculator</a>
+        <a href="{{ route('loan-calculator') }}"
+            class="bg-white text-green-700 font-semibold py-2 px-3 rounded hover:bg-white hover:text-green-600 hover:border-transparent hidden sm:block">Loan
+            Calculator</a>
 
     </nav>
 
@@ -131,6 +132,7 @@ $partners = App\Models\Partner::all();
 
 
     <!-- Subscription Section -->
+
     <section class="bg-salon bg-cover bg-center relative py-20"
         style="background-image: url('https://img.freepik.com/free-photo/green-grass-wallpaper-fresh-green-grass-wallpapers-wallpaper-cave_1340-42685.jpg?t=st=1717916782~exp=1717920382~hmac=b300557944f89b027e2b2b64e2a66d174cb5156ef1c939c3791ec6a18961eaee&w=1800') ">
         <!-- Background Overlay -->
@@ -139,17 +141,7 @@ $partners = App\Models\Partner::all();
             <div class="max-w-lg mx-auto bg-white rounded-lg shadow-lg p-8">
                 <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Subscribe to Our Newsletter</h2>
                 <p class="text-gray-600 mb-6 text-center">Get the latest updates on our services and special offers.</p>
-                <form action="#">
-                    <div class="mb-4">
-                        <input type="email"
-                            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-purple-600"
-                            placeholder="Enter your email">
-                    </div>
-                    <div class="text-center">
-                        <button type="submit"
-                            class="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50">Subscribe</button>
-                    </div>
-                </form>
+                @livewire('newsletter-subscription-form')
             </div>
         </div>
     </section>
@@ -207,7 +199,8 @@ $partners = App\Models\Partner::all();
             </div>
         </div>
         <div class="bg-gray-700 text-center py-4">
-            <p class="text-gray-400 text-sm">&copy; {{ date('Y') }} Plussave Financial Solutions. All rights reserved.</p>
+            <p class="text-gray-400 text-sm">&copy; {{ date('Y') }} Plussave Financial Solutions. All rights
+                reserved.</p>
         </div>
     </footer>
 
@@ -215,17 +208,17 @@ $partners = App\Models\Partner::all();
     <!-- Select2 initialization script -->
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
     <script>
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        < script src = "https://unpkg.com/swiper/swiper-bundle.min.js" >
+    </script>
     <script>
-        document.getElementById('services-button').addEventListener('click', function () {
+        document.getElementById('services-button').addEventListener('click', function() {
             const dropdown = document.getElementById('services-dropdown');
             dropdown.classList.toggle('hidden');
             console.log('Dropdown toggled');
         });
 
         // Close the dropdown if clicked outside
-        document.addEventListener('click', function (event) {
+        document.addEventListener('click', function(event) {
             const dropdown = document.getElementById('services-dropdown');
             const button = document.getElementById('services-button');
 
@@ -235,7 +228,7 @@ $partners = App\Models\Partner::all();
             }
         });
 
-        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
             const menu = document.querySelector('.sm\\:flex');
             menu.classList.toggle('hidden');
             console.log('Mobile menu toggled');
@@ -246,7 +239,7 @@ $partners = App\Models\Partner::all();
 
 
     <script>
-       var swiper = new Swiper('.swiper-container', {
+        var swiper = new Swiper('.swiper-container', {
             slidesPerView: 5,
             spaceBetween: 30,
             loop: true,
@@ -281,15 +274,16 @@ $partners = App\Models\Partner::all();
             });
         });
 
-        document.addEventListener('initAutoScroll', function () {
-        setInterval(function () {
-            let container = document.querySelector('.grid');
-            container.scrollBy({ top: 0, left: 300, behavior: 'smooth' });
-        }, 60000); // Scroll every 1 minute
-    });
-
-
-
+        document.addEventListener('initAutoScroll', function() {
+            setInterval(function() {
+                let container = document.querySelector('.grid');
+                container.scrollBy({
+                    top: 0,
+                    left: 300,
+                    behavior: 'smooth'
+                });
+            }, 60000); // Scroll every 1 minute
+        });
     </script>
 
 

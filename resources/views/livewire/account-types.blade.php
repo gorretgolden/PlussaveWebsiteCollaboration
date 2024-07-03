@@ -1,9 +1,9 @@
 <div class="space-x-10">
     @foreach($accountTypes as $accountType)
-    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <div class="grid grid-cols-1 md:grid-cols-2">
+    <div class="bg-whiterounded-lg overflow-hidden">
+        <div class="grid grid-cols-1 md:grid-cols-2 p-4">
             <div class="p-6">
-                <img class="w-full h-52 object-cover rounded-lg" src="{{ asset('storage/' . str_replace('\\', '/', $accountType->image)) }}" alt="{{ $accountType->title }}">
+                <img class="w-full object-contain rounded-lg" src="{{ asset('storage/' . str_replace('\\', '/', $accountType->image)) }}" alt="{{ $accountType->title }}">
             </div>
             <div class="p-6">
                 <h2 class="text-2xl font-bold mb-2 text-green-700">{{ $accountType->title }}</h2>
