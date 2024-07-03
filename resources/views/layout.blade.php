@@ -132,17 +132,13 @@ $partners = App\Models\Partner::all();
 
 
     <!-- Subscription Section -->
-
     <section class="relative py-20">
         <!-- Video Background -->
         <video autoplay muted loop class="absolute inset-0 object-cover w-full h-full">
-            <source src="https://videocdn.cdnpk.net/videos/f1ddff26-758e-4e4a-b22d-7385aed047ce/horizontal/previews/clear/large.mp4?token=exp=1720005240~hmac=4d40813affa363c80756f54d5ca3c06403ebb4803c7dfedf530ad88b48d02691" type="video/mp4">
-            <!-- Add more <source> elements for different video formats if needed -->
+            <source src="{{asset('assets/subscription-backdrop.mp4')}}" type="video/mp4">
+
             Your browser does not support the video tag.
         </video>
-
-        <!-- Background Overlay -->
-        <div class="absolute inset-0 bg-black opacity-50"></div>
 
         <div class="container mx-auto relative z-10 px-4">
             <div class="max-w-lg mx-auto bg-white rounded-lg shadow-lg p-8">
@@ -152,6 +148,7 @@ $partners = App\Models\Partner::all();
             </div>
         </div>
     </section>
+
 
 
     <!-- Footer Section -->
@@ -206,7 +203,7 @@ $partners = App\Models\Partner::all();
                 </div>
             </div>
         </div>
-        <div class="bg-gray-700 text-center py-4">
+        <div class=" text-center py-4" style="background-color: #2a2a2a">
             <p class="text-gray-400 text-sm">&copy; {{ date('Y') }} Plussave Financial Solutions. All rights
                 reserved.</p>
         </div>
@@ -215,9 +212,8 @@ $partners = App\Models\Partner::all();
 
     <!-- Select2 initialization script -->
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
-    <script>
-        < script src = "https://unpkg.com/swiper/swiper-bundle.min.js" >
-    </script>
+
+
     <script>
         document.getElementById('services-button').addEventListener('click', function() {
             const dropdown = document.getElementById('services-dropdown');

@@ -4,9 +4,6 @@
 
 <div class="max-w-4xl mx-auto flex items-center justify-center mt-8">
 
-    <div class=" md:block md:w-1/3 lg:w-1/2">
-        <img src="https://img.freepik.com/free-vector/manage-money-concept-illustration_114360-8079.jpg?t=st=1719949535~exp=1719953135~hmac=d2183baaf59ee521bd52c8ed271109d25b45888ac22a02d10de5a194583d16e6&w=1380" alt="Image" class="w-full h-auto">
-    </div>
     <div class="w-full md:w-2/3 lg:w-1/2 px-4">
         <div class="bg-white shadow-md rounded px-8 py-6  mb-4">
             @if (session()->has('message'))
@@ -117,6 +114,13 @@
             </form>
         </div>
     </div>
+    <div class="md:block md:w-1/3 lg:w-1/2 relative">
+        <img src="{{ asset('assets/loan-application-image-right.png') }}" alt="loan-application-image-right"
+            class="w-full h-auto ">
+    </div>
+
+
+
 
 
 </div>
