@@ -4,7 +4,8 @@
 
 <div class="flex justify-center items-center min-h-screen ">
     <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-lg">
-        <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Loan Calculator</h2>
+        <h2 class="text-2xl font-bold mb-6 text-center text-gray-800 ">Loan Calculator</h2>
+
 
         <form wire:submit.prevent="calculateLoan">
             <div class="mb-6">
@@ -31,7 +32,7 @@
                 @error('amortizationPeriod') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
             </div>
 
-            <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full">Calculate</button>
+            <button type="submit" class="bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-4 rounded w-full">Calculate</button>
         </form>
 
         @if($monthlyPayment)

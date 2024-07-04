@@ -14,13 +14,20 @@
     </div>
 
 
-    <div class="py-6 flex  items-center lg:items-start">
-        <div class="w-full  flex justify-center lg:justify-start mb-6 lg:mb-0">
-            <img src="{{ asset('assets/loan-calculator.png') }}" alt="Loan Calculator Image" class="w-64">
-        </div>
-        <div class="w-full ">
-            <livewire:loan-calculator />
+
+    <div class="container mx-auto py-16 px-6">
+
+        <div class="flex flex-col md:flex-row items-center justify-between">
+            <div>
+                <img src="{{ asset('assets/loan-calculator.png') }}" alt="Loan Calculator Image" class="w-1/2 ml-4">
+
+            </div>
+
+            <div class="w-full">
+                <livewire:loan-calculator />
+            </div>
+
+
         </div>
     </div>
-
 @endsection
