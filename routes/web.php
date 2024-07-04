@@ -38,7 +38,7 @@ Route::get('/services/savings',[SavingsController::class,'index'])->name('servic
 Route::get('/services/loan-calculator',[LoanController::class,'calculator'])->name('loan-calculator');
 Route::get('/services/loans',[LoanController::class,'index'])->name('services.loans');
 
-
+Route::get('/loans/apply',[LoanController::class,'apply'])->name('loans.apply');
 
 Route::group(['prefix' => 'admin'], function () {
     FacadesVoyager::routes();

@@ -12,34 +12,176 @@
     </div>
     <br>
 
-    <!--In need of a quick loan-->
-    <div class="container mx-auto py-16 px-6">
+    <!--saving--call to action-->
+    <div class=" mx-auto py-16 px-6">
 
         <div class="flex flex-col md:flex-row items-center justify-between">
             <div class="md:w-1/2 md:ml-6 mb-5 p-6">
-                <h2 class="text-3xl font-bold mb-10 text-green-700">In need of a quick secure loan?</h2>
-                <h3 class="text-gray-700 leading-relaxed mb-6 ">Plus Save makes life easy with simple secured loans that you can apply for in minutes. Get a quick quick loan today, by visiting your nearest branch for your loan request or make an online application. You will always be updated about your loan status. Fo
+                <h2 class="text-3xl font-bold mb-10 text-green-700">Start Saving Smart with Plus Save Financial Solutions</h2>
+                <h3 class="text-gray-700 leading-relaxed mb-6 ">Looking for a reliable way to manage your finances?
+                    Plus Save Financial Solutions offers more than just quick loans.
+                     We provide secure, hassle-free solutions designed to help you save and grow your money with confidence.
                 </h3>
-                <p class="text-gray-700 leading-relaxed">Nam ultricies, ex sit amet aliquet dapibus, magna nulla tempor
-                    tortor, ut consectetur odio erat eget turpis. Suspendisse potenti. Pellentesque commodo est id mauris
-                    rhoncus, ut vehicula arcu pretium.</p>
-                    <button
-                    class="bg-green-700 text-white mt-10 font-semibold py-2 px-3 rounded hover:bg-white hover:text-green-600 hover:border-transparent hidden sm:block">
-                    Apply for a Loan
-                </button>
+                <p class="text-gray-700 leading-relaxed">Join us at Plus Save Financial Solutions today and start making smarter financial decisions. Your future starts here.</p>
+                    <br>
+                <a href="{{ route('loans.apply') }}"
+                    class="inline-block bg-green-700 text-white font-semibold py-2  px-2 rounded hover:bg-green-800 hover:text-white hover:shadow-lg">
+                     Open an account
+                </a>
+
 
 
             </div>
             <!-- Image on the left -->
             <div class="md:w-1/2 mb-6 md:mb-0">
                 <img class=" w-1full h-auto rounded-lg"
-                    src="https://plussavefinancialsolutions.com/uploads/home/1938001059.webp"
-                    alt="Image">
+                    src="https://plussavefinancialsolutions.com/uploads/home/1938001059.webp" alt="Image">
             </div>
             <!-- Title and text on the right -->
 
         </div>
     </div>
+
+    <!--In need of a quick loan-->
+    {{-- <div class="container mx-auto py-16 px-6">
+
+        <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 md:ml-6 mb-5 p-6">
+                <h2 class="text-3xl font-bold mb-10 text-green-700">In need of a quick secure loan?</h2>
+                <h3 class="text-gray-700 leading-relaxed mb-6 ">Plus Save makes life easy with simple secured loans that you
+                    can apply for in minutes. Get a quick quick loan today, by visiting your nearest branch for your loan
+                    request or make an online application. You will always be updated about your loan status. Fo
+                </h3>
+                <p class="text-gray-700 leading-relaxed">Nam ultricies, ex sit amet aliquet dapibus, magna nulla tempor
+                    tortor, ut consectetur odio erat eget turpis. Suspendisse potenti. Pellentesque commodo est id mauris
+                    rhoncus, ut vehicula arcu pretium.</p>
+                    <br>
+                <a href="{{ route('loans.apply') }}"
+                    class="inline-block bg-green-700 text-white font-semibold py-2  px-2 rounded hover:bg-green-800 hover:text-white hover:shadow-lg">
+                    Apply for a Loan
+                </a>
+
+
+
+            </div>
+            <!-- Image on the left -->
+            <div class="md:w-1/2 mb-6 md:mb-0">
+                <img class=" w-1full h-auto rounded-lg"
+                    src="https://plussavefinancialsolutions.com/uploads/home/1938001059.webp" alt="Image">
+            </div>
+            <!-- Title and text on the right -->
+
+        </div>
+    </div> --}}
+
+
+
+    <!--why save with us-->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center mb-8">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-6">Why Save with Plus Save</h2>
+                <p class="text-lg text-gray-600 mb-8">
+                    Looking for a reliable way to manage your finances? Plus Save Financial Solutions offers more than just quick loans. We provide secure, hassle-free solutions designed to help you save and grow your money with confidence.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div class="p-6 bg-white rounded-lg shadow-lg flex items-center">
+                    <div class="mr-4 bg-green-700 rounded-full p-2">
+                        <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 1.5a8.5 8.5 0 110 17 8.5 8.5 0 010-17zm4.33 4.612a.5.5 0 01-.163.686l-2.537 1.652.611 2.755a.5.5 0 01-.736.523l-2.894-1.615-2.894 1.615a.5.5 0 01-.736-.523l.611-2.755-2.537-1.652a.5.5 0 01-.163-.686l2.176-2.21-.285-2.913a.5.5 0 01.724-.488l2.706 1.4 2.706-1.4a.5.5 0 01.724.488l-.285 2.913 2.176 2.21z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Simple and Secure</h3>
+                        <p class="text-gray-600">
+                            Manage your finances effortlessly with our secure savings solutions. Our commitment to security ensures your peace of mind while saving.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-lg flex items-center">
+                    <div class="mr-4 bg-green-700 rounded-full p-2">
+                        <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 1.5a8.5 8.5 0 110 17 8.5 8.5 0 010-17zm4.33 4.612a.5.5 0 01-.163.686l-2.537 1.652.611 2.755a.5.5 0 01-.736.523l-2.894-1.615-2.894 1.615a.5.5 0 01-.736-.523l.611-2.755-2.537-1.652a.5.5 0 01-.163-.686l2.176-2.21-.285-2.913a.5.5 0 01.724-.488l2.706 1.4 2.706-1.4a.5.5 0 01.724.488l-.285 2.913 2.176 2.21z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Personalized Service</h3>
+                        <p class="text-gray-600">
+                            Apply for loans conveniently online or visit our branches for personalized assistance. We are here to support your financial goals every step of the way.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-lg flex items-center">
+                    <div class="mr-4 bg-green-700 rounded-full p-2">
+                        <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 1.5a8.5 8.5 0 110 17 8.5 8.5 0 010-17zm4.33 4.612a.5.5 0 01-.163.686l-2.537 1.652.611 2.755a.5.5 0 01-.736.523l-2.894-1.615-2.894 1.615a.5.5 0 01-.736-.523l.611-2.755-2.537-1.652a.5.5 0 01-.163-.686l2.176-2.21-.285-2.913a.5.5 0 01.724-.488l2.706 1.4 2.706-1.4a.5.5 0 01.724.488l-.285 2.913 2.176 2.21z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Transparent Updates</h3>
+                        <p class="text-gray-600">
+                            Stay informed every step of the way with real-time updates on your loan status. Our transparent approach ensures you are always in control of your financial decisions.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-lg flex items-center">
+                    <div class="mr-4 bg-green-700 rounded-full p-2">
+                        <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 1.5a8.5 8.5 0 110 17 8.5 8.5 0 010-17zm4.33 4.612a.5.5 0 01-.163.686l-2.537 1.652.611 2.755a.5.5 0 01-.736.523l-2.894-1.615-2.894 1.615a.5.5 0 01-.736-.523l.611-2.755-2.537-1.652a.5.5 0 01-.163-.686l2.176-2.21-.285-2.913a.5.5 0 01.724-.488l2.706 1.4 2.706-1.4a.5.5 0 01.724.488l-.285 2.913 2.176 2.21z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Start Saving Smart</h3>
+                        <p class="text-gray-600">
+                            Join us at Plus Save Financial Solutions today and start making smarter financial decisions. Your future starts here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {{-- <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <div class=" ">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-6">Why Save with Plus Save</h2>
+                <p class="text-lg text-gray-600 mb-8">
+                    Looking for a reliable way to manage your finances? Plus Save Financial Solutions offers more than just quick loans. We provide secure, hassle-free solutions designed to help you save and grow your money with confidence.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div class="p-6 bg-white rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Simple and Secure</h3>
+                    <p class="text-gray-600">
+                        Manage your finances effortlessly with our secure savings solutions. Our commitment to security ensures your peace of mind while saving.
+                    </p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Personalized Service</h3>
+                    <p class="text-gray-600">
+                        Apply for loans conveniently online or visit our branches for personalized assistance. We are here to support your financial goals every step of the way.
+                    </p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Transparent Updates</h3>
+                    <p class="text-gray-600">
+                        Stay informed every step of the way with real-time updates on your loan status. Our transparent approach ensures you are always in control of your financial decisions.
+                    </p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Start Saving Smart</h3>
+                    <p class="text-gray-600">
+                        Join us at Plus Save Financial Solutions today and start making smarter financial decisions. Your future starts here.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> --}}
+
 
     <!--service types-->
     <section class="secondary-bg">
@@ -125,7 +267,7 @@
 
 
     <!--How we give loans-->
-{{--
+    {{--
     <section class=" py-20 mt-10 secondary-bg">
         <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">How We Give Loans</h2>
 
