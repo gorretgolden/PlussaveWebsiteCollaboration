@@ -76,10 +76,10 @@
 
 
 
-    <!--why save with us-->
+    <!--why save with us  max-w-3xl mx-auto  mb-8-->
     <section class="bg-gray-100 py-12">
         <div class="container mx-auto px-4">
-            <div class="max-w-3xl mx-auto text-center mb-8">
+            <div>
                 <h2 class="text-3xl font-semibold text-gray-800 mb-6">Why Save with Plus Save</h2>
                 <p class="text-lg text-gray-600 mb-8">
                     Looking for a reliable way to manage your finances? Plus Save Financial Solutions offers more than just quick loans. We provide secure, hassle-free solutions designed to help you save and grow your money with confidence.
