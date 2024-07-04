@@ -57,7 +57,7 @@ $partners = App\Models\Partner::all();
                 <div id="services-dropdown" class="hidden absolute bg-white shadow-lg rounded-md mt-2 z-50 w-40">
                     <a href="{{ route('services.savings') }}"
                         class="block text-gray-800 px-4 py-2 hover:bg-gray-100">Savings</a>
-                    <a href="{{ route('services.savings') }}"
+                    <a href="{{ route('services.loans') }}"
                         class="block text-gray-800 px-4 py-2 hover:bg-gray-100">Loans</a>
                     <a href="{{ route('services.savings') }}"
                         class="block text-gray-800 px-4 py-2 hover:bg-gray-100">Financial Advice</a>

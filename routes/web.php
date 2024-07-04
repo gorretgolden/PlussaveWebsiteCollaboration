@@ -35,7 +35,8 @@ Route::get('/contact_us',[ContactUsPageController::class,'index'])->name('contac
 Route::get('/faqs',[FaqController::class,'index'])->name('faqs');
 Route::get('/blog',[BlogController::class,'index'])->name('blog');
 Route::get('/services/savings',[SavingsController::class,'index'])->name('services.savings');
-Route::get('/services/loan-calculator',[LoanController::class,'index'])->name('loan-calculator');
+Route::get('/services/loan-calculator',[LoanController::class,'calculator'])->name('loan-calculator');
+Route::get('/services/loans',[LoanController::class,'index'])->name('services.loans');
 
 
 
