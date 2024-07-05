@@ -9,7 +9,7 @@ class AddTypeToTeamMembersTable extends Migration
     public function up()
     {
         Schema::table('team_members', function (Blueprint $table) {
-            $table->string('type')->nullable()->after('position');
+            $table->string('type')->default('member')->after('position');
         });
     }
 
