@@ -3,6 +3,8 @@
 @section('title', 'Financial Literacy')
 
 @section('content')
+     <!-- Hero Section -->
+     <livewire:hero-section type="financial-literacy" />
     <!-- Financial Tips and Tricks Section -->
     <div class="container mx-auto py-16">
         @livewire('financial-tips-component')

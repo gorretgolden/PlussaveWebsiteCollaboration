@@ -60,8 +60,8 @@ $partners = App\Models\Partner::all();
                         class="block text-gray-800 px-4 py-2 hover:bg-gray-100">Savings</a>
                     <a href="{{ route('services.loans') }}"
                         class="block text-gray-800 px-4 py-2 hover:bg-gray-100">Loans</a>
-                    <a href="{{ route('services.savings') }}"
-                        class="block text-gray-800 px-4 py-2 hover:bg-gray-100">Financial Advice</a>
+                    <a href="{{ route('services.financial-literacy') }}"
+                        class="block text-gray-800 px-4 py-2 hover:bg-gray-100">Financial Literacy</a>
                     <a href="{{ route('services.savings') }}"
                         class="block text-gray-800 px-4 py-2 hover:bg-gray-100">Others</a>
                 </div>

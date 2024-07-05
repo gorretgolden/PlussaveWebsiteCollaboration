@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutUsPageController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactUsPageController;
+use App\Http\Controllers\FinancialLiteracyController;
 use App\Http\Controllers\ServicesPageController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\LoanController;
@@ -37,7 +38,7 @@ Route::get('/blog',[BlogController::class,'index'])->name('blog');
 Route::get('/services/savings',[SavingsController::class,'index'])->name('services.savings');
 Route::get('/services/loan-calculator',[LoanController::class,'calculator'])->name('loan-calculator');
 Route::get('/services/loans',[LoanController::class,'index'])->name('services.loans');
-
+Route::get('/services/financial-literacy',[FinancialLiteracyController::class,'index'])->name('services.financial-literacy');
 Route::get('/loans/apply',[LoanController::class,'apply'])->name('loans.apply');
 
 Route::group(['prefix' => 'admin'], function () {
