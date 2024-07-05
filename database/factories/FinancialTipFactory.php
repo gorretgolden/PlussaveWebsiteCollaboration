@@ -14,7 +14,7 @@ class FinancialTipFactory extends Factory
     {
         return [
             'title' => $this->faker->sentence,
-            'description' => $this->faker->paragraph,
+            'content' => $this->faker->paragraph,
         ];
     }
 }

@@ -12,8 +12,8 @@ class FinancialAdviceFactory extends Factory
     public function definition()
     {
         return [
-            'advisor_name' => $this->faker->name,
-            'advice' => $this->faker->paragraph,
+            'title' => $this->faker->name,
+            'content' => $this->faker->paragraph,
         ];
     }
 }

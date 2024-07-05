@@ -13,7 +13,7 @@ class SavingsPlanFactory extends Factory
     {
         return [
             'name' => $this->faker->word,
-            'details' => $this->faker->paragraph,
+            'description' => $this->faker->paragraph,
         ];
     }
 }
