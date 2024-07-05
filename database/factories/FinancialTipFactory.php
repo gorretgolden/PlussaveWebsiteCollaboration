@@ -2,19 +2,19 @@
 
 namespace Database\Factories;
 
+use App\Models\FinancialTip;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class FinancialTipFactory extends Factory
 {
-    /**
-     * Define the model's default state.
-     *
-     * @return array
-     */
+
+    protected $model = FinancialTip::class;
+
     public function definition()
     {
         return [
-            //
+            'title' => $this->faker->sentence,
+            'description' => $this->faker->paragraph,
         ];
     }
 }

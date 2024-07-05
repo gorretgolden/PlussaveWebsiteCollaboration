@@ -2,19 +2,18 @@
 
 namespace Database\Factories;
 
+use App\Models\SavingsPlan;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class SavingsPlanFactory extends Factory
 {
-    /**
-     * Define the model's default state.
-     *
-     * @return array
-     */
+    protected $model = SavingsPlan::class;
+
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->word,
+            'details' => $this->faker->paragraph,
         ];
     }
 }
