@@ -8,6 +8,7 @@ use App\Http\Controllers\ServicesPageController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\LoanController;
 use App\Http\Controllers\MemberController;
+use App\Http\Controllers\OtherFinancialServicesController;
 use App\Http\Controllers\SavingsController;
 use Illuminate\Support\Facades\Route;
 use TCG\Voyager\Facades\Voyager as FacadesVoyager;
@@ -39,6 +40,7 @@ Route::get('/services/savings',[SavingsController::class,'index'])->name('servic
 Route::get('/services/loan-calculator',[LoanController::class,'calculator'])->name('loan-calculator');
 Route::get('/services/loans',[LoanController::class,'index'])->name('services.loans');
 Route::get('/services/financial-literacy',[FinancialLiteracyController::class,'index'])->name('services.financial-literacy');
+Route::get('/services/other-financial-services',[OtherFinancialServicesController::class,'index'])->name('services.others');
 Route::get('/loans/apply',[LoanController::class,'apply'])->name('loans.apply');
 
 Route::group(['prefix' => 'admin'], function () {

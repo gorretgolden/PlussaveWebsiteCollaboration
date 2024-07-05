@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             FinancialTipsSeeder::class,
             SavingsPlansSeeder::class,
             FinancialAdviceSeeder::class,
+            OtherFinancialServicesSeeder::class
         ]);
     }
 }

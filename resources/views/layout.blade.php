@@ -21,7 +21,8 @@ $partners = App\Models\Partner::all();
 
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <!-- Add jQuery and Select2 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
@@ -62,7 +63,7 @@ $partners = App\Models\Partner::all();
                         class="block text-gray-800 px-4 py-2 hover:bg-gray-100">Loans</a>
                     <a href="{{ route('services.financial-literacy') }}"
                         class="block text-gray-800 px-4 py-2 hover:bg-gray-100">Financial Literacy</a>
-                    <a href="{{ route('services.savings') }}"
+                    <a href="{{ route('services.others') }}"
                         class="block text-gray-800 px-4 py-2 hover:bg-gray-100">Others</a>
                 </div>
             </div>
