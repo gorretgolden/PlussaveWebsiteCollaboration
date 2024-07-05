@@ -16,6 +16,7 @@ $partners = App\Models\Partner::all();
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
+
     <!-- Styles -->
 
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
@@ -295,6 +296,8 @@ $partners = App\Models\Partner::all();
 
 
     @livewireScripts
+    @stack('scripts')
+    @yield('scripts')
 
     <script>
         // Refreshing the Livewire component every 10 seconds

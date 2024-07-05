@@ -17,16 +17,16 @@
 
         <div class="flex flex-col md:flex-row items-center justify-between">
             <div class="md:w-1/2 md:ml-6 mb-5 p-6">
-                <h2 class="text-3xl font-bold mb-10 text-green-700">Start Saving Smart with Plus Save Financial Solutions</h2>
+                <h2 class="text-3xl font-bold mb-10 text-green-700">Start Saving Smart with Plussave Financial Solutions</h2>
                 <h3 class="text-gray-700 leading-relaxed mb-6 ">Looking for a reliable way to manage your finances?
-                    Plus Save Financial Solutions offers more than just quick loans.
+                    Plussave Financial Solutions offers more than just quick loans.
                      We provide secure, hassle-free solutions designed to help you save and grow your money with confidence.
                 </h3>
-                <p class="text-gray-700 leading-relaxed">Join us at Plus Save Financial Solutions today and start making smarter financial decisions. Your future starts here.</p>
+                <p class="text-gray-700 leading-relaxed">Join us today and start making smarter financial decisions. Your future starts here.</p>
                     <br>
                 <a href="{{ route('loans.apply') }}"
                     class="inline-block bg-green-700 text-white font-semibold py-2  px-2 rounded hover:bg-green-800 hover:text-white hover:shadow-lg">
-                     Open an account
+                    Get started today
                 </a>
 
 
@@ -34,8 +34,7 @@
             </div>
             <!-- Image on the left -->
             <div class="md:w-1/2 mb-6 md:mb-0">
-                <img class=" w-1full h-auto rounded-lg"
-                    src="https://plussavefinancialsolutions.com/uploads/home/1938001059.webp" alt="Image">
+                <div id="lottie-animation" class="w-full h-auto rounded-lg"></div>
             </div>
             <!-- Title and text on the right -->
 
@@ -80,9 +79,9 @@
     <section class="bg-gray-100 py-12">
         <div class="container mx-auto px-4">
             <div>
-                <h2 class="text-3xl font-semibold text-gray-800 mb-6">Why Save with Plus Save</h2>
+                <h2 class="text-3xl font-semibold text-gray-800 mb-6">Why Save with Plussave</h2>
                 <p class="text-lg text-gray-600 mb-8">
-                    Looking for a reliable way to manage your finances? Plus Save Financial Solutions offers more than just quick loans. We provide secure, hassle-free solutions designed to help you save and grow your money with confidence.
+                    Looking for a reliable way to manage your finances? Plussave Financial Solutions offers more than just quick loans. We provide secure, hassle-free solutions designed to help you save and grow your money with confidence.
                 </p>
             </div>
 
@@ -369,4 +368,35 @@
     </div>
 
 
+@endsection
+
+
+@section('scripts')
+<!-- Include the bodymovin library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Document loaded, initializing Lottie animation...');
+
+    var animation = bodymovin.loadAnimation({
+    container: document.getElementById('lottie-animation'),
+    path: '{{ asset('assets/save-money.json') }}',
+    renderer: 'svg', // Ensure renderer is set to 'svg'
+    loop: true,
+    autoplay: true,
+    rendererSettings: {
+        preserveAspectRatio: 'xMidYMid meet' // Adjust if needed
+    }
+});
+
+
+    animation.addEventListener('DOMLoaded', function() {
+        console.log('Animation loaded and ready to play.');
+        animation.play();
+    });
+});
+
+
+</script>
 @endsection
