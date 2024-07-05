@@ -1,10 +1,20 @@
-<!-- financial-tips-component.blade.php -->
+<div >
+    <!-- financial-tips-component.blade.php -->
 <div class="p-6">
     <h2 class="text-2xl font-bold mb-4">Financial Tips and Tricks</h2>
-    @foreach($tips as $tip)
-        <div class="bg-white shadow-md rounded p-4 mb-4">
-            <h3 class="text-xl font-semibold">{{ $tip->title }}</h3>
-            <p class="text-gray-700">{{ $tip->content }}</p>
+    @foreach($financialTips as $tip)
+    <div class="mb-4 p-4 border rounded flex items-start">
+        <div class="mr-4 text-green-700">
+            <i class="fas fa-lightbulb fa-2x"></i>
         </div>
-    @endforeach
+        <div>
+            <h3 class="text-lg font-bold">{{ $tip->title }}</h3>
+            <p>{{ $tip->content }}</p>
+        </div>
+    </div>
+@endforeach
+
+    {{ $financialTips->links() }}
+</div>
+
 </div>

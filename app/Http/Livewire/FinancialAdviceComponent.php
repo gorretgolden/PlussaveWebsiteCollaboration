@@ -3,19 +3,21 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
+use Livewire\WithPagination;
 use App\Models\FinancialAdvice;
 
 class FinancialAdviceComponent extends Component
 {
-    public $advice;
-
-    public function mount()
-    {
-        $this->advice = FinancialAdvice::all();
-    }
+    use WithPagination;
 
     public function render()
     {
-        return view('livewire.financial-advice-component', ['advice' => $this->advice]);
+        $financialAdvice = FinancialAdvice::paginate(4);
+        return view('livewire.financial-advice-component', ['financialAdvice' => $financialAdvice]);
+    }
+
+    public function updated()
+    {
+        $this->emit('pageChanged');
     }
 }

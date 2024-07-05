@@ -6,17 +6,21 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use App\Models\FinancialTip;
 
+use Livewire\WithPagination;
+
+
 class FinancialTipsComponent extends Component
 {
-    public $tips;
-
-    public function mount()
-    {
-        $this->tips = FinancialTip::all();
-    }
+    use WithPagination;
 
     public function render()
     {
-        return view('livewire.financial-tips-component', ['tips' => $this->tips]);
+        $financialTips = FinancialTip::paginate(4);
+        return view('livewire.financial-tips-component', ['financialTips' => $financialTips]);
+    }
+
+    public function updated()
+    {
+        $this->emit('pageChanged');
     }
 }
