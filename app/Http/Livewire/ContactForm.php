@@ -40,7 +40,7 @@ class ContactForm extends Component
         ]);
 
         // Send email notification
-        $this->sendEmailNotification();
+        //$this->sendEmailNotification();
 
         // Reset form fields after successful submission
         $this->reset(['name', 'email', 'phone', 'message']);

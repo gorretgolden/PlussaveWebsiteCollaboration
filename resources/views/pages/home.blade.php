@@ -34,59 +34,26 @@
             </div>
             <!-- Image on the left -->
             <div class="md:w-1/2 mb-6 md:mb-0">
-                <div id="lottie-animation" class="w-full h-auto rounded-lg"></div>
+               <img src="{{asset('assets/home-right-image.png')}}"/>
             </div>
             <!-- Title and text on the right -->
 
         </div>
     </div>
 
-    <!--In need of a quick loan-->
-    {{-- <div class="container mx-auto py-16 px-6">
-
-        <div class="flex flex-col md:flex-row items-center justify-between">
-            <div class="md:w-1/2 md:ml-6 mb-5 p-6">
-                <h2 class="text-3xl font-bold mb-10 text-green-700">In need of a quick secure loan?</h2>
-                <h3 class="text-gray-700 leading-relaxed mb-6 ">Plus Save makes life easy with simple secured loans that you
-                    can apply for in minutes. Get a quick quick loan today, by visiting your nearest branch for your loan
-                    request or make an online application. You will always be updated about your loan status. Fo
-                </h3>
-                <p class="text-gray-700 leading-relaxed">Nam ultricies, ex sit amet aliquet dapibus, magna nulla tempor
-                    tortor, ut consectetur odio erat eget turpis. Suspendisse potenti. Pellentesque commodo est id mauris
-                    rhoncus, ut vehicula arcu pretium.</p>
-                    <br>
-                <a href="{{ route('loans.apply') }}"
-                    class="inline-block bg-green-700 text-white font-semibold py-2  px-2 rounded hover:bg-green-800 hover:text-white hover:shadow-lg">
-                    Apply for a Loan
-                </a>
-
-
-
-            </div>
-            <!-- Image on the left -->
-            <div class="md:w-1/2 mb-6 md:mb-0">
-                <img class=" w-1full h-auto rounded-lg"
-                    src="https://plussavefinancialsolutions.com/uploads/home/1938001059.webp" alt="Image">
-            </div>
-            <!-- Title and text on the right -->
-
-        </div>
-    </div> --}}
-
 
 
     <!--why save with us  max-w-3xl mx-auto  mb-8-->
-    <section class="bg-gray-100 py-12">
-        <div class="container mx-auto px-4">
+    <section class="bg-gray-100">
+        <div class=" py-16 px-20">
             <div>
                 <h2 class="text-3xl font-semibold text-gray-800 mb-6">Why Save with Plussave</h2>
                 <p class="text-lg text-gray-600 mb-8">
                     Looking for a reliable way to manage your finances? Plussave Financial Solutions offers more than just quick loans. We provide secure, hassle-free solutions designed to help you save and grow your money with confidence.
                 </p>
             </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                <div class="p-6 bg-white rounded-lg shadow-lg flex items-center">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="p-6 bg-white rounded-lg shadow-lg flex items-center max-w-xl mx-auto sm:mx-0"> <!-- Adjusted max-width -->
                     <div class="mr-4 bg-green-700 rounded-full p-2">
                         <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10 1.5a8.5 8.5 0 110 17 8.5 8.5 0 010-17zm4.33 4.612a.5.5 0 01-.163.686l-2.537 1.652.611 2.755a.5.5 0 01-.736.523l-2.894-1.615-2.894 1.615a.5.5 0 01-.736-.523l.611-2.755-2.537-1.652a.5.5 0 01-.163-.686l2.176-2.21-.285-2.913a.5.5 0 01.724-.488l2.706 1.4 2.706-1.4a.5.5 0 01.724.488l-.285 2.913 2.176 2.21z" clip-rule="evenodd" />
@@ -99,7 +66,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="p-6 bg-white rounded-lg shadow-lg flex items-center">
+                <div class="p-6 bg-white rounded-lg shadow-lg flex items-center max-w-xl mx-auto sm:mx-0"> <!-- Adjusted max-width -->
                     <div class="mr-4 bg-green-700 rounded-full p-2">
                         <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10 1.5a8.5 8.5 0 110 17 8.5 8.5 0 010-17zm4.33 4.612a.5.5 0 01-.163.686l-2.537 1.652.611 2.755a.5.5 0 01-.736.523l-2.894-1.615-2.894 1.615a.5.5 0 01-.736-.523l.611-2.755-2.537-1.652a.5.5 0 01-.163-.686l2.176-2.21-.285-2.913a.5.5 0 01.724-.488l2.706 1.4 2.706-1.4a.5.5 0 01.724.488l-.285 2.913 2.176 2.21z" clip-rule="evenodd" />
@@ -112,7 +79,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="p-6 bg-white rounded-lg shadow-lg flex items-center">
+                <div class="p-6 bg-white rounded-lg shadow-lg flex items-center max-w-xl mx-auto sm:mx-0"> <!-- Adjusted max-width -->
                     <div class="mr-4 bg-green-700 rounded-full p-2">
                         <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10 1.5a8.5 8.5 0 110 17 8.5 8.5 0 010-17zm4.33 4.612a.5.5 0 01-.163.686l-2.537 1.652.611 2.755a.5.5 0 01-.736.523l-2.894-1.615-2.894 1.615a.5.5 0 01-.736-.523l.611-2.755-2.537-1.652a.5.5 0 01-.163-.686l2.176-2.21-.285-2.913a.5.5 0 01.724-.488l2.706 1.4 2.706-1.4a.5.5 0 01.724.488l-.285 2.913 2.176 2.21z" clip-rule="evenodd" />
@@ -125,7 +92,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="p-6 bg-white rounded-lg shadow-lg flex items-center">
+                <div class="p-6 bg-white rounded-lg shadow-lg flex items-center max-w-xl mx-auto sm:mx-0"> <!-- Adjusted max-width -->
                     <div class="mr-4 bg-green-700 rounded-full p-2">
                         <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10 1.5a8.5 8.5 0 110 17 8.5 8.5 0 010-17zm4.33 4.612a.5.5 0 01-.163.686l-2.537 1.652.611 2.755a.5.5 0 01-.736.523l-2.894-1.615-2.894 1.615a.5.5 0 01-.736-.523l.611-2.755-2.537-1.652a.5.5 0 01-.163-.686l2.176-2.21-.285-2.913a.5.5 0 01.724-.488l2.706 1.4 2.706-1.4a.5.5 0 01.724.488l-.285 2.913 2.176 2.21z" clip-rule="evenodd" />
@@ -139,6 +106,8 @@
                     </div>
                 </div>
             </div>
+
+
         </div>
     </section>
 
@@ -193,7 +162,7 @@
     <!--why choose us-->
     <section class="py-12 bg-white">
 
-        <div class="container mx-auto px-4 mb-10">
+        <div class="px-20 mx-auto  mb-10">
             <!-- Section Heading -->
             <div class="mb-12 ">
                 <h2 class="text-2xl font-bold text-gray-800 py-6">Why Choose Us</h2>

@@ -132,4 +132,9 @@
 
         </div>
     </section>
+
+
+    <!--Gallery-->
+    {{-- <livewire:gallery-component /> --}}
+
 @endsection
