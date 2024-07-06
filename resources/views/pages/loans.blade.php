@@ -9,7 +9,10 @@
 
 
     <!--Loan Information-->
-    <livewire:loan-information-section />
+    <section>
+        <livewire:loan-information-section />
+    </section>
+
 
 
     <!--Loan Types-->

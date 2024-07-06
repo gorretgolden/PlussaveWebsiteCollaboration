@@ -6,7 +6,7 @@
 
     <!-- About Us -->
     <section class="py-20 bg-white">
-        <div class="container mx-auto px-4">
+        <div class="mx-auto px-20">
             <div class="flex flex-wrap items-center justify-center">
                 <div class="w-full md:w-1/2 p-4">
                     <h2 class="text-2xl font-bold text-green-700 mb-8">{{ $aboutUs->background_title }}</h2>
@@ -21,7 +21,7 @@
 
     <!-- Our Mission Section -->
     <section class="py-20 bg-gray-100">
-        <div class="container mx-auto px-4">
+        <div class="mx-auto px-20 ">
             <h2 class="text-2xl font-bold text-center mb-8">Our Mission</h2>
             <p class="text-gray-600 text-center mb-8">{{ $aboutUs->mision }}</p>
             <div class="flex flex-wrap justify-center">
@@ -95,7 +95,7 @@
 
     <!-- Our Team Section -->
     <section class="py-20 bg-gray-100">
-        <div class="container mx-auto px-4">
+        <div class=" mx-auto px-4">
             <h2 class="text-2xl font-bold text-center text-gray-800 mb-8">Our Team</h2>
 
             <!-- Board Members -->

@@ -1,4 +1,4 @@
-<div class="container mx-auto py-16 px-6">
+<div class="mx-auto px-20 py-16">
     <div class="flex flex-col md:flex-row items-center justify-between">
         <!-- Content on the left -->
         <div class="md:w-1/2 md:ml-6 mb-5 p-6">
