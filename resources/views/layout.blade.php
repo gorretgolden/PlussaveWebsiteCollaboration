@@ -39,7 +39,7 @@ $partners = App\Models\Partner::all();
         <div class="flex items-center">
             <!-- Logo -->
             <a href="/">
-                <img class="h-16 w-auto mr-2" src="{{ asset('applogo.png') }}" alt="Your Company">
+                <img class="h-16 w-auto mr-2 ml-4" src="{{ asset('applogo.png') }}" alt="Your Company">
             </a>
         </div>
         <!-- Mobile menu button -->
@@ -91,23 +91,29 @@ $partners = App\Models\Partner::all();
 
 
 
-    <!-- Mobile menu -->
-    <div class="sm:hidden" id="mobile-menu" style="display: none;">
-        <div class="bg-black p-4">
-            <a href="#"
-                class="block text-white hover:bg-purple-900 rounded-md hover:text-white px-3 py-2 text-base font-bold mb-2">Services</a>
-            <a href="#"
-                class="block text-white hover:bg-purple-900 rounded-md hover:text-white px-3 py-2 text-base font-bold mb-2">Bookings</a>
-            <a href="#"
-                class="block text-white hover:bg-purple-900 rounded-md hover:text-white px-3 py-2 text-base font-bold mb-2">About
-                Us</a>
-            <a href="#"
-                class="block text-white hover:bg-purple-900 rounded-md hover:text-white px-3 py-2 text-base font-bold mb-2">Contact
-                Us</a>
-            <button wire:click="toggleModal"
-                class="border border-purple-600 text-white font-semibold py-2 px-4 rounded hover:bg-white hover:text-purple-600 hover:border-transparent mt-4 ml-3">Login</button>
-        </div>
+  <!-- Mobile menu -->
+<div class="sm:hidden" id="mobile-menu" style="display: none;">
+    <div class="bg-black p-4">
+        <a href="{{ route('services.savings') }}"
+            class="block text-white hover:bg-green-700 rounded-md hover:text-white px-3 py-2 text-base font-bold mb-2">Savings</a>
+        <a href="{{ route('services.loans') }}"
+            class="block text-white hover:bg-green-700 rounded-md hover:text-white px-3 py-2 text-base font-bold mb-2">Loans</a>
+        <a href="{{ route('services.financial-literacy') }}"
+            class="block text-white hover:bg-green-700 rounded-md hover:text-white px-3 py-2 text-base font-bold mb-2">Financial Literacy</a>
+        <a href="{{ route('services.others') }}"
+            class="block text-white hover:bg-green-700 rounded-md hover:text-white px-3 py-2 text-base font-bold mb-2">Others</a>
+        <a href="{{ route('about-us') }}"
+            class="block text-white hover:bg-green-700 rounded-md hover:text-white px-3 py-2 text-base font-bold mb-2">About Us</a>
+        <a href="{{ route('faqs') }}"
+            class="block text-white hover:bg-green-700 rounded-md hover:text-white px-3 py-2 text-base font-bold mb-2">FAQs</a>
+        <a href="{{ route('contact-us') }}"
+            class="block text-white hover:bg-green-700 rounded-md hover:text-white px-3 py-2 text-base font-bold mb-2">Contact Us</a>
+        <a href="{{ route('blog') }}"
+            class="block text-white hover:bg-green-700 rounded-md hover:text-white px-3 py-2 text-base font-bold mb-2">Blog</a>
+        <button wire:click="toggleModal"
+            class="border border-purple-600 text-white font-semibold py-2 px-4 rounded hover:bg-white hover:text-purple-600 hover:border-transparent mt-4 ml-3">Login</button>
     </div>
+</div>
 
 
     <main>
@@ -293,6 +299,20 @@ $partners = App\Models\Partner::all();
     </script>
 
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var mobileMenuButton = document.getElementById('mobile-menu-button');
+        var mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', function () {
+            if (mobileMenu.style.display === 'block') {
+                mobileMenu.style.display = 'none';
+            } else {
+                mobileMenu.style.display = 'block';
+            }
+        });
+    });
+</script>
 
 
 

@@ -45,15 +45,15 @@
 
     <!--why save with us  max-w-3xl mx-auto  mb-8-->
     <section class="bg-gray-100">
-        <div class=" py-16 px-20">
+        <div class="py-16 px-20 sm:px-8 lg:px-20">
             <div>
                 <h2 class="text-3xl font-semibold text-gray-800 mb-6">Why Save with Plussave</h2>
                 <p class="text-lg text-gray-600 mb-8">
                     Looking for a reliable way to manage your finances? Plussave Financial Solutions offers more than just quick loans. We provide secure, hassle-free solutions designed to help you save and grow your money with confidence.
                 </p>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div class="p-6 bg-white rounded-lg shadow-lg flex items-center max-w-xl mx-auto sm:mx-0"> <!-- Adjusted max-width -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="p-6 bg-white rounded-lg shadow-lg flex items-center">
                     <div class="mr-4 bg-green-700 rounded-full p-2">
                         <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10 1.5a8.5 8.5 0 110 17 8.5 8.5 0 010-17zm4.33 4.612a.5.5 0 01-.163.686l-2.537 1.652.611 2.755a.5.5 0 01-.736.523l-2.894-1.615-2.894 1.615a.5.5 0 01-.736-.523l.611-2.755-2.537-1.652a.5.5 0 01-.163-.686l2.176-2.21-.285-2.913a.5.5 0 01.724-.488l2.706 1.4 2.706-1.4a.5.5 0 01.724.488l-.285 2.913 2.176 2.21z" clip-rule="evenodd" />
@@ -66,7 +66,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="p-6 bg-white rounded-lg shadow-lg flex items-center max-w-xl mx-auto sm:mx-0"> <!-- Adjusted max-width -->
+                <div class="p-6 bg-white rounded-lg shadow-lg flex items-center">
                     <div class="mr-4 bg-green-700 rounded-full p-2">
                         <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10 1.5a8.5 8.5 0 110 17 8.5 8.5 0 010-17zm4.33 4.612a.5.5 0 01-.163.686l-2.537 1.652.611 2.755a.5.5 0 01-.736.523l-2.894-1.615-2.894 1.615a.5.5 0 01-.736-.523l.611-2.755-2.537-1.652a.5.5 0 01-.163-.686l2.176-2.21-.285-2.913a.5.5 0 01.724-.488l2.706 1.4 2.706-1.4a.5.5 0 01.724.488l-.285 2.913 2.176 2.21z" clip-rule="evenodd" />
@@ -79,7 +79,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="p-6 bg-white rounded-lg shadow-lg flex items-center max-w-xl mx-auto sm:mx-0"> <!-- Adjusted max-width -->
+                <div class="p-6 bg-white rounded-lg shadow-lg flex items-center">
                     <div class="mr-4 bg-green-700 rounded-full p-2">
                         <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10 1.5a8.5 8.5 0 110 17 8.5 8.5 0 010-17zm4.33 4.612a.5.5 0 01-.163.686l-2.537 1.652.611 2.755a.5.5 0 01-.736.523l-2.894-1.615-2.894 1.615a.5.5 0 01-.736-.523l.611-2.755-2.537-1.652a.5.5 0 01-.163-.686l2.176-2.21-.285-2.913a.5.5 0 01.724-.488l2.706 1.4 2.706-1.4a.5.5 0 01.724.488l-.285 2.913 2.176 2.21z" clip-rule="evenodd" />
@@ -92,7 +92,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="p-6 bg-white rounded-lg shadow-lg flex items-center max-w-xl mx-auto sm:mx-0"> <!-- Adjusted max-width -->
+                <div class="p-6 bg-white rounded-lg shadow-lg flex items-center">
                     <div class="mr-4 bg-green-700 rounded-full p-2">
                         <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10 1.5a8.5 8.5 0 110 17 8.5 8.5 0 010-17zm4.33 4.612a.5.5 0 01-.163.686l-2.537 1.652.611 2.755a.5.5 0 01-.736.523l-2.894-1.615-2.894 1.615a.5.5 0 01-.736-.523l.611-2.755-2.537-1.652a.5.5 0 01-.163-.686l2.176-2.21-.285-2.913a.5.5 0 01.724-.488l2.706 1.4 2.706-1.4a.5.5 0 01.724.488l-.285 2.913 2.176 2.21z" clip-rule="evenodd" />
@@ -106,10 +106,9 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </section>
+
 
 
     {{-- <section class="bg-gray-100 py-12">
