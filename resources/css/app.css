@@ -117,10 +117,23 @@
     color: white;
 }
 
+
+.text-green-700 {
+    color: #047857;
+}
+
+.text-black {
+    color: #000000;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
 .typing-effect {
     white-space: nowrap;
     overflow: hidden;
-    border-right: 0.15em solid orange; /* Adjust the caret style as needed */
+    border-right: 0.15em solid green;
     animation: typing 2s steps(30, end), blink-caret 0.75s step-end infinite;
 }
 
