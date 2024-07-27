@@ -104,6 +104,32 @@
 
 
 #lottie-animation {
-    width: 100%; /* Adjust as needed */
-    height: auto; /* Adjust as needed */
+    width: 100%;
+    height: auto;
+}
+
+
+.text-black {
+    color: black;
+}
+
+.text-white {
+    color: white;
+}
+
+.typing-effect {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid orange; /* Adjust the caret style as needed */
+    animation: typing 2s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: green; }
 }
