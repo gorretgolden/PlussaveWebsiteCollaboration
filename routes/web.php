@@ -29,6 +29,12 @@ use TCG\Voyager\Facades\Voyager as FacadesVoyager;
 Route::get('/', function () {
     return view('pages.home');
 });
+// In a route or controller
+Artisan::call('cache:clear');
+Artisan::call('config:clear');
+Artisan::call('route:clear');
+Artisan::call('view:clear');
+
 
 Route::get('members/new-account',[MemberController::class,'index'])->name('new-member');
 Route::get('/services',[ServicesPageController::class])->name('services');
