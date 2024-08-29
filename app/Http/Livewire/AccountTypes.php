@@ -7,10 +7,15 @@ use Livewire\Component;
 class AccountTypes extends Component
 {
     public $accountTypes;
+    public $loading = true;
 
     public function mount()
     {
+        $this->loading = true;
+        sleep(8);
+
         $this->accountTypes = AccountType::with('features', 'benefits')->get();
+        $this->loading = false;
     }
     public function render()
     {
