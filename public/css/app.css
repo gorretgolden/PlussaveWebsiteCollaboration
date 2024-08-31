@@ -1000,6 +1000,9 @@ video {
 .p-2 {
   padding: 0.5rem;
 }
+.p-3 {
+  padding: 0.75rem;
+}
 .p-4 {
   padding: 1rem;
 }
@@ -1142,6 +1145,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
@@ -1275,35 +1282,27 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Shimmer effect styles */
+/* Shimmer effect */
 .shimmer {
-    position: relative;
-    overflow: hidden;
-    background-color: #f6f7f8;
-    background-image: linear-gradient(
-        90deg,
-        rgba(255, 255, 255, 0) 0,
-        rgba(255, 255, 255, 0.2) 20%,
-        rgba(255, 255, 255, 0.5) 60%,
-        rgba(255, 255, 255, 0)
-    );
+    background: linear-gradient(to right, #f0f0f0 0%, #e0e0e0 20%, #f0f0f0 40%, #f0f0f0 100%);
     background-size: 200% 100%;
     animation: shimmer 1.5s infinite;
 }
 
 @keyframes shimmer {
     0% {
-        background-position: -200% 0;
+        background-position: 200% 0;
     }
     100% {
-        background-position: 200% 0;
+        background-position: -200% 0;
     }
 }
 
-/* Hide the shimmer once the image or video is loaded */
-.media-loaded {
-    background: none;
-    animation: none;
+.shimmer-wrapper {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
 }
 
 .swiper-slide {
@@ -1632,6 +1631,10 @@ video {
 
 @media (min-width: 640px) {
 
+  .sm\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -1646,6 +1649,14 @@ video {
 
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:h-8 {
+    height: 2rem;
+  }
+
+  .sm\:w-8 {
+    width: 2rem;
   }
 
   .sm\:flex-1 {
@@ -1668,9 +1679,27 @@ video {
     justify-content: space-between;
   }
 
+  .sm\:p-4 {
+    padding: 1rem;
+  }
+
+  .sm\:p-6 {
+    padding: 1.5rem;
+  }
+
   .sm\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -1728,12 +1757,20 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
   }
 
   .md\:text-4xl {
@@ -1767,6 +1804,10 @@ video {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:p-10 {
+    padding: 2.5rem;
   }
 
   .lg\:px-20 {
