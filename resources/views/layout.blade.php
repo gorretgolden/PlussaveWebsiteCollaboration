@@ -123,23 +123,10 @@ $partners = App\Models\Partner::all();
         @yield('content')
     </main>
 
-    <!--Partners-->
-    {{-- <section class="py-12 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Our Partners</h2>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    @foreach ($partners as $partner)
-                        <div class="swiper-slide">
-                            <img src="{{ asset('storage/' . $partner->image) }}" alt="{{ $partner->name }}">
-                        </div>
-                    @endforeach
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-    </section> --}}
+    <!--Client Testimonials-->
+    <section class="py-12 bg-white">
+    @livewire('client-testimonials')
+    </section>
 
 
     <!-- Subscription Section -->
