@@ -48,7 +48,7 @@
     <section class="bg-gray-100 mx-auto py-16 px-6">
         <div class="md:ml-6 mb-5 p-6 ">
             <h2 class="text-3xl font-bold text-gray-800 md:w-1/2 mb-5  ">Why Save with Plussave</h2>
-            <p class="text-2xl text-gray-600 mb-8">
+            <p class="text-2xl text-gray-600 mb-4">
                 Looking for a reliable way to manage your finances? Plussave Financial Solutions offers more than just quick
                 loans. We provide secure, hassle-free solutions designed to help you save and grow your money with
                 confidence.
