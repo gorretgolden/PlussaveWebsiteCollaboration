@@ -12,6 +12,7 @@
     </div>
     <br>
 
+
     <!--saving--call to action-->
     <div class=" mx-auto py-16 px-6">
 
@@ -72,7 +73,7 @@
 
 
     <!--why choose us-->
-    <section class="y-16 px-20 mb- bg-white">
+    <section class="py-16 px-20 mb-5 bg-white">
 
 
         <!-- Section Heading -->

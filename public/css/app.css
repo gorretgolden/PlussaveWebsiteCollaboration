@@ -1677,6 +1677,10 @@ video {
     justify-content: space-between;
   }
 
+  .sm\:p-10 {
+    padding: 2.5rem;
+  }
+
   .sm\:p-2 {
     padding: 0.5rem;
   }
@@ -1688,6 +1692,11 @@ video {
   .sm\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .sm\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .sm\:text-lg {
@@ -1754,6 +1763,11 @@ video {
     padding: 2rem;
   }
 
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1797,6 +1811,11 @@ video {
 
   .lg\:p-8 {
     padding: 2rem;
+  }
+
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .lg\:px-20 {
