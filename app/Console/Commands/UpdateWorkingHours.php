@@ -22,7 +22,7 @@ class UpdateWorkingHours extends Command
         $currentDay = $now->format('l');  // Getting the current day, e.g Monday
         $currentTime = $now->format('H:i'); // Getting the current time, e.g '21:00' for 9 PM
 
-        // Get the working hours for the current day
+
         $workingHours = WorkingHour::where('day', $currentDay)
             ->where('is_closed', false) // Only update if not already closed
             ->first();

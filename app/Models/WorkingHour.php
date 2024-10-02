@@ -9,6 +9,7 @@ class WorkingHour extends Model
 {
     use HasFactory;
     protected $fillable = ['day', 'opening_time', 'closing_time', 'is_closed'];
+
     public function getOpeningTimeAttribute($value)
     {
         return \Carbon\Carbon::parse($value)->format('h:i A');
