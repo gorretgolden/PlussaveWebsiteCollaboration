@@ -1,0 +1,172 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Shimmer effect */
+.shimmer {
+    background: linear-gradient(to right, #f0f0f0 0%, #e0e0e0 20%, #f0f0f0 40%, #f0f0f0 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+.shimmer-wrapper {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 300px; /* Adjust this value as needed */
+}
+
+.step-circle {
+    width: 4rem;
+    height: 4rem;
+    background-color: #15803D;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.step-content {
+    position: relative;
+}
+.step-content::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -1.25rem;
+    width: 1.5rem;
+    height: 0.25rem;
+    background-color: #15803D;
+    border-radius: 0.125rem;
+}
+.dashed-line {
+    position: relative;
+    height: 2rem;
+    width: 0.25rem;
+    background: repeating-linear-gradient(
+        to bottom,
+        #15803D,
+        #15803D 0.25rem,
+        transparent 0.25rem,
+        transparent 0.5rem
+    );
+}
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.secondary-bg{
+    background-color: #f9fafc;
+}
+.underline-green{
+    border: 2px solid green;
+    border-style: dashed;
+    border-width: 100;
+}
+
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.slide-right {
+    animation: slideRight 1s ease-out forwards;
+}
+
+.placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #f0f0f0;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #f0f0f0;
+    }
+    50% {
+        background-color: #e0e0e0;
+    }
+    100% {
+        background-color: #f0f0f0;
+    }
+}
+
+
+#lottie-animation {
+    width: 100%;
+    height: auto;
+}
+
+
+.text-black {
+    color: black;
+}
+
+.text-white {
+    color: white;
+}
+
+
+.text-green-700 {
+    color: #047857;
+}
+
+.text-black {
+    color: #000000;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.typing-effect {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid green;
+    animation: typing 2s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: green; }
+}
