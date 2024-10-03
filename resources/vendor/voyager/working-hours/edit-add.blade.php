@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 {{-- @extends('voyager::master')
+=======
+@extends('voyager::master')
+>>>>>>> 100321af48ff6d29fcabb57df61298fc329fe147
 
 @section('content')
 <div class="page-content edit-add container-fluid">
@@ -87,4 +91,8 @@
             });
         });
     </script>
+<<<<<<< HEAD
 @endsection --}}
+=======
+@endsection
+>>>>>>> 100321af48ff6d29fcabb57df61298fc329fe147
